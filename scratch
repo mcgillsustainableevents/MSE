@@ -1,0 +1,47 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+@backgroundColor: @white;
+
+/* Text */
+@fontFamily: @pageFont;
+@fontWeight: 400;
+@textColor: @ClientBlue;
+
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+@hoverBackgroundColor: @offWhite;
+@hoverColor: @ClientBlue;
+
+/* Focused */
+@focusBackgroundColor: @white;
+@focusColor: @ClientBlue;
+
+/* Pressed Down */
+@downBackgroundColor: @offWhite;
+@downColor: @ClientBlue;
+
+/* Active */
+@activeBackgroundColor: #C0C1C2;
+@activeBackgroundImage: none;
+@activeColor: @selectedTextColor;
+@activeBoxShadow: @borderBoxShadow;
+
+/* Active + Hovered */
+@activeHoverBackgroundColor: @activeBackgroundColor;
+@activeHoverBackgroundImage: none;
+@activeHoverColor: @activeColor;
+@activeHoverBoxShadow: @activeBoxShadow;

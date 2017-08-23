@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@backgroundColor: white;
+@textColor: @blue;
+@focusColor: @blue;
+@focusBackgroundColor: white;
+@hoverColor: @blue;
+@hoverBackgroundColor: @offWhite;
+@downBackgroundColor: @offWhite;
+@downColor: @blue;
