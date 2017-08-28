@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { setKV, nextView } from './actions.js';
 import { Input } from 'semantic-ui-react';
 import Responsive from 'react-responsive';
+import { Link } from 'react-router';
+import { withRouter } from 'react-router';
 
 class TextInput extends React.Component {
   constructor(props) {
@@ -59,4 +61,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(TextInput);
+export default withRouter(connect(null, mapDispatchToProps)(TextInput));

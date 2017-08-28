@@ -3,10 +3,10 @@ import ProgressBar from './ProgressBar';
 import Centered from './Centered';
 import QuestionHeader from './QuestionHeader';
 
-const Question = ({ question, children }) =>
+const Question = ({ question, controls }) =>
   <Centered>
     <QuestionHeader question={question} />
-    {children}
+    {controls}
     <ProgressBar />
   </Centered>;
 

@@ -31,6 +31,10 @@ const reducer = (state = [], action) => {
       };
     case 'SET_KV':
       return { ...state, data: { ...state.data, [action.key]: action.value } };
+    case 'RESET_QUESTIONS':
+      return {
+        ...state, currentView: 0
+      }
     default:
       return state;
   }

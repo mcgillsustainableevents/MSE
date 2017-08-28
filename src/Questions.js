@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Calculator from './Calculator.js';
-import Buttons from './Buttons.js';
+import ButtonQuestion from './ButtonQuestion.js';
 import TextInput from './TextInput.js';
 import DateInput from './DateInput.js';
 import AmountInput from './AmountInput.js';
@@ -88,31 +88,16 @@ const questions = [
   }
 ];
 
-const App = ({ currentView, resetQuestions }) =>
-  <div>
-    <Route exact path="/" component={Landing} />
-    <Route
-      path="/questions/:question"
-      render={({ match: { params: { question } } }) => {
-        return (
-          <Question
-            question={questions[currentView].question}
-            controls={questions[currentView].controls}
-          />
-        );
-      }}
-    />
-    <Route path="/calculator" component={Calculator} />
-  </div>;
+class Questions extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentQuestion };
+  }
 
-const mapStateToProps = state => {
-  return {
-    currentView: state.currentView
-  };
-};
 
-const mapDispatchToProps = dispatch => {
-  resetQuestions: () => dispatch({ type: 'RESET_QUESTIONS' });
-};
+  render() {
 
-export default withRouter(connect(mapStateToProps)(App));
+    questions[this.state.currentQuestion]
+  }
+}
+export default Questions;

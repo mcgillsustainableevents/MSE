@@ -7,7 +7,7 @@ import Centered from './Centered';
 import QuestionHeader from './QuestionHeader';
 import Responsive from 'react-responsive';
 
-const ButtonQuestion = props => {
+const Buttons = props => {
   const formatButton = (button, i) => {
     return (
       <Responsive maxDeviceWidth={480} key={i}>
@@ -31,19 +31,12 @@ const ButtonQuestion = props => {
     );
   };
   return (
-    <Centered>
-      <QuestionHeader question={props.question} />
-      <Grid columns={props.buttons.length}>
-        {props.buttons.map(formatButton)}
-      </Grid>
-      <ProgressBar />
-    </Centered>
+    <Grid columns={props.buttons.length}>
+      {props.buttons.map(formatButton)}
+    </Grid>
   );
 };
 
-const mapStateToProps = state => {
-  return {};
-};
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -55,4 +48,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ButtonQuestion);
+export default connect(null, mapDispatchToProps)(Buttons);
