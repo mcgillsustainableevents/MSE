@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.2.10
+ * # Semantic UI - 2.2.13
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -8,9 +8,9 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic&subset=latin');
 /*!
- * # Semantic UI 2.2.10 - Reset
+ * # Semantic UI 2.2.13 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28,10 +28,12 @@
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -46,26 +48,19 @@ input[type="password"] {
   /* mobile firefox too! */
 }
 
-/*******************************
-         Theme Overrides
-*******************************/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* Document
+   ========================================================================== */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
  */
 
 html {
-  font-family: sans-serif;
+  line-height: 1.15;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -73,124 +68,33 @@ html {
   /* 2 */
 }
 
+/* Sections
+   ========================================================================== */
+
 /**
- * Remove default margin.
+ * Remove the margin in all browsers (opinionated).
  */
 
 body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-
 /**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
+ * Add the correct display in IE 9-.
  */
 
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
-main,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
 /**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background: transparent;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
@@ -198,17 +102,136 @@ h1 {
   margin: 0.67em 0;
 }
 
+/* Grouping content
+   ========================================================================== */
+
 /**
- * Address styling not present in IE 8/9.
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
  */
 
 mark {
-  background: #ff0;
+  background-color: #ff0;
   color: #000;
 }
 
 /**
- * Address inconsistent and variable font size in all browsers.
+ * Add the correct font size in all browsers.
  */
 
 small {
@@ -216,7 +239,8 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
  */
 
 sub,
@@ -227,85 +251,57 @@ sup {
   vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
-}
-
 sub {
   bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 /* Embedded content
    ========================================================================== */
 
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Add the correct display in IE 9-.
  */
 
-img {
-  border: 0;
+audio,
+video {
+  display: inline-block;
 }
 
 /**
- * Correct overflow not hidden in IE 9/10/11.
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
  */
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 /* Forms
    ========================================================================== */
 
 /**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
 
 button,
@@ -313,153 +309,120 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+  font-family: sans-serif;
   /* 1 */
-  font: inherit;
-  /* 2 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
   margin: 0;
-  /* 3 */
+  /* 2 */
 }
 
 /**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
  */
 
-button {
+button,
+input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
  */
 
 button,
 select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: pointer;
-  /* 3 */
 }
 
 /**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
+ * Remove the inner border and padding in Firefox.
  */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
   padding: 0;
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * Restore the focus styles unset by the previous rule.
  */
 
-input {
-  line-height: normal;
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
- */
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
+ * Correct the padding in Firefox.
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
  */
 
 legend {
-  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
   /* 1 */
   padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
   /* 2 */
 }
 
 /**
- * Remove default vertical scrollbar in IE 8/9/10/11.
+ * Remove the default vertical scrollbar in IE.
  */
 
 textarea {
@@ -467,36 +430,117 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
  */
 
-optgroup {
-  font-weight: bold;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
-/* Tables
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
    ========================================================================== */
 
 /**
- * Remove most spacing between table cells.
+ * Add the correct display in IE 9-.
  */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+canvas {
+  display: inline-block;
 }
 
-td,
-th {
-  padding: 0;
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
 }
 
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Site
+ * # Semantic UI 2.2.13 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -616,6 +660,10 @@ a:hover {
 }
 
 /*******************************
+         Scrollbars
+*******************************/
+
+/*******************************
           Highlighting
 *******************************/
 
@@ -656,6 +704,52 @@ input::selection {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/* Force Simple Scrollbars */
+
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 135, 139, 0.8);
+}
+
+/* Inverted UI */
+
+body .ui.inverted::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
 /*******************************
         Global Overrides
 *******************************/
@@ -664,7 +758,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Button
+ * # Semantic UI 2.2.13 - Button
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -697,13 +791,16 @@ input::selection {
   text-align: center;
   text-decoration: none;
   border-radius: 0.28571429rem;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   will-change: '';
   -webkit-tap-highlight-color: transparent;
 }
@@ -719,6 +816,7 @@ input::selection {
 .ui.button:hover {
   background-color: #F9FAFB;
   background-image: none;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   color: #2185D0;
 }
@@ -735,6 +833,7 @@ input::selection {
   background-color: white;
   color: #2185D0;
   background-image: '' !important;
+  -webkit-box-shadow: '' !important;
   box-shadow: '' !important;
 }
 
@@ -751,6 +850,7 @@ input::selection {
   background-color: #F9FAFB;
   background-image: '';
   color: #2185D0;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset, none;
   box-shadow: 0px 0px 0px 1px transparent inset, none;
 }
 
@@ -761,6 +861,7 @@ input::selection {
 .ui.active.button {
   background-color: #C0C1C2;
   background-image: none;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset;
   box-shadow: 0px 0px 0px 1px transparent inset;
   color: rgba(0, 0, 0, 0.95);
 }
@@ -821,11 +922,13 @@ input::selection {
   border-color: #FFFFFF transparent transparent;
   border-style: solid;
   border-width: 0.2em;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent;
   box-shadow: 0px 0px 0px 1px transparent;
 }
 
 .ui.labeled.icon.loading.button .icon {
   background-color: transparent;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -873,6 +976,7 @@ input::selection {
   cursor: default;
   opacity: 0.45 !important;
   background-image: none !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   pointer-events: none !important;
 }
@@ -1029,6 +1133,7 @@ input::selection {
 --------------------*/
 
 .ui.inverted.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   background: transparent none;
   color: #FFFFFF;
@@ -1059,6 +1164,7 @@ input::selection {
 
 .ui.inverted.button:hover {
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   color: #2185D0;
 }
@@ -1068,6 +1174,7 @@ input::selection {
 .ui.inverted.button:focus,
 .ui.inverted.button.active {
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
   color: #2185D0;
 }
@@ -1076,6 +1183,7 @@ input::selection {
 
 .ui.inverted.button.active:focus {
   background: #DCDDDE;
+  -webkit-box-shadow: 0px 0px 0px 2px #DCDDDE inset !important;
   box-shadow: 0px 0px 0px 2px #DCDDDE inset !important;
   color: #2185D0;
 }
@@ -1095,6 +1203,7 @@ input::selection {
   background: none !important;
   padding: 0px !important;
   border: none !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
@@ -1157,6 +1266,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1179,6 +1289,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1201,6 +1312,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1243,6 +1355,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1265,6 +1378,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1287,6 +1401,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1308,6 +1423,7 @@ input::selection {
   background-color: #4D7198;
   color: #FFFFFF;
   background-image: none;
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1464,10 +1580,12 @@ input::selection {
   border-radius: 0.28571429rem;
   text-transform: none;
   text-shadow: none !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons {
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.28571429rem;
@@ -1481,6 +1599,7 @@ input::selection {
 .ui.basic.button:hover {
   background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1488,6 +1607,7 @@ input::selection {
 .ui.basic.button:focus {
   background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1495,12 +1615,14 @@ input::selection {
 .ui.basic.button:active {
   background: #F8F8F8 !important;
   color: rgba(0, 0, 0, 0.9) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .active.button,
 .ui.basic.active.button {
   background: rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: '' !important;
   box-shadow: '' !important;
   color: rgba(0, 0, 0, 0.95);
 }
@@ -1513,14 +1635,17 @@ input::selection {
 /* Vertical */
 
 .ui.basic.buttons .button:hover {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset inset;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset inset;
 }
 
 .ui.basic.buttons .button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset inset;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset inset;
 }
 
 .ui.basic.buttons .active.button {
+  -webkit-box-shadow: '' !important;
   box-shadow: '' !important;
 }
 
@@ -1530,18 +1655,21 @@ input::selection {
 .ui.basic.inverted.button {
   background-color: transparent !important;
   color: #F9FAFB !important;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
 }
 
 .ui.basic.inverted.buttons .button:hover,
 .ui.basic.inverted.button:hover {
   color: #FFFFFF !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #ffffff inset !important;
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
 }
 
 .ui.basic.inverted.buttons .button:focus,
 .ui.basic.inverted.button:focus {
   color: #FFFFFF !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #ffffff inset !important;
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
 }
 
@@ -1549,6 +1677,7 @@ input::selection {
 .ui.basic.inverted.button:active {
   background-color: rgba(255, 255, 255, 0.08) !important;
   color: #FFFFFF !important;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.9) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.9) inset !important;
 }
 
@@ -1557,12 +1686,14 @@ input::selection {
   background-color: rgba(255, 255, 255, 0.08);
   color: #FFFFFF;
   text-shadow: none;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7) inset;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7) inset;
 }
 
 .ui.basic.inverted.buttons .active.button:hover,
 .ui.basic.inverted.active.button:hover {
   background-color: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0px 0px 0px 2px #ffffff inset !important;
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
 }
 
@@ -1570,6 +1701,7 @@ input::selection {
 
 .ui.basic.buttons .button {
   border-left: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -1612,6 +1744,7 @@ input::selection {
   width: 2.57142857em;
   background-color: rgba(0, 0, 0, 0.05);
   color: '';
+  -webkit-box-shadow: -1px 0px 0px 0px transparent inset;
   box-shadow: -1px 0px 0px 0px transparent inset;
 }
 
@@ -1636,6 +1769,7 @@ input::selection {
   border-radius: 0px;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
+  -webkit-box-shadow: 1px 0px 0px 0px transparent inset;
   box-shadow: 1px 0px 0px 0px transparent inset;
 }
 
@@ -1694,6 +1828,7 @@ input::selection {
 .ui.buttons .button.toggle.active,
 .ui.button.toggle.active {
   background-color: #21BA45 !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   text-shadow: none;
   color: #FFFFFF !important;
@@ -1746,6 +1881,7 @@ input::selection {
   color: rgba(0, 0, 0, 0.4);
   font-style: normal;
   font-weight: bold;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset;
   box-shadow: 0px 0px 0px 1px transparent inset;
 }
 
@@ -1774,6 +1910,7 @@ input::selection {
   display: block;
   margin: 0em;
   border-radius: 0em;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) !important;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) !important;
 }
 
@@ -2068,6 +2205,7 @@ input::selection {
 }
 
 .ui.black.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2105,6 +2243,7 @@ input::selection {
 
 .ui.basic.black.buttons .button,
 .ui.basic.black.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
   box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
   color: #1B1C1D !important;
 }
@@ -2112,6 +2251,7 @@ input::selection {
 .ui.basic.black.buttons .button:hover,
 .ui.basic.black.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #27292a inset !important;
   box-shadow: 0px 0px 0px 1px #27292a inset !important;
   color: #27292a !important;
 }
@@ -2119,6 +2259,7 @@ input::selection {
 .ui.basic.black.buttons .button:focus,
 .ui.basic.black.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #2f3032 inset !important;
   box-shadow: 0px 0px 0px 1px #2f3032 inset !important;
   color: #27292a !important;
 }
@@ -2126,12 +2267,14 @@ input::selection {
 .ui.basic.black.buttons .active.button,
 .ui.basic.black.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #0f0f10 inset !important;
   box-shadow: 0px 0px 0px 1px #0f0f10 inset !important;
   color: #343637 !important;
 }
 
 .ui.basic.black.buttons .button:active,
 .ui.basic.black.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #343637 inset !important;
   box-shadow: 0px 0px 0px 1px #343637 inset !important;
   color: #343637 !important;
 }
@@ -2145,6 +2288,7 @@ input::selection {
 .ui.inverted.black.buttons .button,
 .ui.inverted.black.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   color: #FFFFFF;
 }
@@ -2157,6 +2301,7 @@ input::selection {
 .ui.inverted.black.button.active,
 .ui.inverted.black.buttons .button:active,
 .ui.inverted.black.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -2187,6 +2332,7 @@ input::selection {
 .ui.inverted.black.buttons .basic.button,
 .ui.inverted.black.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -2194,6 +2340,7 @@ input::selection {
 .ui.inverted.black.basic.buttons .button:hover,
 .ui.inverted.black.buttons .basic.button:hover,
 .ui.inverted.black.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #000000 inset !important;
   box-shadow: 0px 0px 0px 2px #000000 inset !important;
   color: #FFFFFF !important;
 }
@@ -2201,6 +2348,7 @@ input::selection {
 .ui.inverted.black.basic.buttons .button:focus,
 .ui.inverted.black.basic.buttons .button:focus,
 .ui.inverted.black.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #000000 inset !important;
   box-shadow: 0px 0px 0px 2px #000000 inset !important;
   color: #545454 !important;
 }
@@ -2208,6 +2356,7 @@ input::selection {
 .ui.inverted.black.basic.buttons .active.button,
 .ui.inverted.black.buttons .basic.active.button,
 .ui.inverted.black.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #000000 inset !important;
   box-shadow: 0px 0px 0px 2px #000000 inset !important;
   color: #FFFFFF !important;
 }
@@ -2215,6 +2364,7 @@ input::selection {
 .ui.inverted.black.basic.buttons .button:active,
 .ui.inverted.black.buttons .basic.button:active,
 .ui.inverted.black.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #000000 inset !important;
   box-shadow: 0px 0px 0px 2px #000000 inset !important;
   color: #FFFFFF !important;
 }
@@ -2230,6 +2380,7 @@ input::selection {
 }
 
 .ui.grey.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2267,6 +2418,7 @@ input::selection {
 
 .ui.basic.grey.buttons .button,
 .ui.basic.grey.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #767676 inset !important;
   box-shadow: 0px 0px 0px 1px #767676 inset !important;
   color: #767676 !important;
 }
@@ -2274,6 +2426,7 @@ input::selection {
 .ui.basic.grey.buttons .button:hover,
 .ui.basic.grey.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #838383 inset !important;
   box-shadow: 0px 0px 0px 1px #838383 inset !important;
   color: #838383 !important;
 }
@@ -2281,6 +2434,7 @@ input::selection {
 .ui.basic.grey.buttons .button:focus,
 .ui.basic.grey.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #8a8a8a inset !important;
   box-shadow: 0px 0px 0px 1px #8a8a8a inset !important;
   color: #838383 !important;
 }
@@ -2288,12 +2442,14 @@ input::selection {
 .ui.basic.grey.buttons .active.button,
 .ui.basic.grey.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #696969 inset !important;
   box-shadow: 0px 0px 0px 1px #696969 inset !important;
   color: #909090 !important;
 }
 
 .ui.basic.grey.buttons .button:active,
 .ui.basic.grey.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #909090 inset !important;
   box-shadow: 0px 0px 0px 1px #909090 inset !important;
   color: #909090 !important;
 }
@@ -2307,6 +2463,7 @@ input::selection {
 .ui.inverted.grey.buttons .button,
 .ui.inverted.grey.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   color: #FFFFFF;
 }
@@ -2319,6 +2476,7 @@ input::selection {
 .ui.inverted.grey.button.active,
 .ui.inverted.grey.buttons .button:active,
 .ui.inverted.grey.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #2185D0;
 }
@@ -2349,6 +2507,7 @@ input::selection {
 .ui.inverted.grey.buttons .basic.button,
 .ui.inverted.grey.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -2356,6 +2515,7 @@ input::selection {
 .ui.inverted.grey.basic.buttons .button:hover,
 .ui.inverted.grey.buttons .basic.button:hover,
 .ui.inverted.grey.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
   box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
   color: #FFFFFF !important;
 }
@@ -2363,6 +2523,7 @@ input::selection {
 .ui.inverted.grey.basic.buttons .button:focus,
 .ui.inverted.grey.basic.buttons .button:focus,
 .ui.inverted.grey.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #c7c9cb inset !important;
   box-shadow: 0px 0px 0px 2px #c7c9cb inset !important;
   color: #DCDDDE !important;
 }
@@ -2370,6 +2531,7 @@ input::selection {
 .ui.inverted.grey.basic.buttons .active.button,
 .ui.inverted.grey.buttons .basic.active.button,
 .ui.inverted.grey.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
   box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
   color: #FFFFFF !important;
 }
@@ -2377,6 +2539,7 @@ input::selection {
 .ui.inverted.grey.basic.buttons .button:active,
 .ui.inverted.grey.buttons .basic.button:active,
 .ui.inverted.grey.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #c2c4c5 inset !important;
   box-shadow: 0px 0px 0px 2px #c2c4c5 inset !important;
   color: #FFFFFF !important;
 }
@@ -2392,6 +2555,7 @@ input::selection {
 }
 
 .ui.brown.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2429,6 +2593,7 @@ input::selection {
 
 .ui.basic.brown.buttons .button,
 .ui.basic.brown.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #A5673F inset !important;
   box-shadow: 0px 0px 0px 1px #A5673F inset !important;
   color: #A5673F !important;
 }
@@ -2436,6 +2601,7 @@ input::selection {
 .ui.basic.brown.buttons .button:hover,
 .ui.basic.brown.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #975b33 inset !important;
   box-shadow: 0px 0px 0px 1px #975b33 inset !important;
   color: #975b33 !important;
 }
@@ -2443,6 +2609,7 @@ input::selection {
 .ui.basic.brown.buttons .button:focus,
 .ui.basic.brown.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #90532b inset !important;
   box-shadow: 0px 0px 0px 1px #90532b inset !important;
   color: #975b33 !important;
 }
@@ -2450,12 +2617,14 @@ input::selection {
 .ui.basic.brown.buttons .active.button,
 .ui.basic.brown.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #995a31 inset !important;
   box-shadow: 0px 0px 0px 1px #995a31 inset !important;
   color: #805031 !important;
 }
 
 .ui.basic.brown.buttons .button:active,
 .ui.basic.brown.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #805031 inset !important;
   box-shadow: 0px 0px 0px 1px #805031 inset !important;
   color: #805031 !important;
 }
@@ -2469,6 +2638,7 @@ input::selection {
 .ui.inverted.brown.buttons .button,
 .ui.inverted.brown.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #D67C1C inset !important;
   box-shadow: 0px 0px 0px 2px #D67C1C inset !important;
   color: #D67C1C;
 }
@@ -2481,6 +2651,7 @@ input::selection {
 .ui.inverted.brown.button.active,
 .ui.inverted.brown.buttons .button:active,
 .ui.inverted.brown.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -2511,6 +2682,7 @@ input::selection {
 .ui.inverted.brown.buttons .basic.button,
 .ui.inverted.brown.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -2518,6 +2690,7 @@ input::selection {
 .ui.inverted.brown.basic.buttons .button:hover,
 .ui.inverted.brown.buttons .basic.button:hover,
 .ui.inverted.brown.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #c86f11 inset !important;
   box-shadow: 0px 0px 0px 2px #c86f11 inset !important;
   color: #D67C1C !important;
 }
@@ -2525,6 +2698,7 @@ input::selection {
 .ui.inverted.brown.basic.buttons .button:focus,
 .ui.inverted.brown.basic.buttons .button:focus,
 .ui.inverted.brown.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #c16808 inset !important;
   box-shadow: 0px 0px 0px 2px #c16808 inset !important;
   color: #D67C1C !important;
 }
@@ -2532,6 +2706,7 @@ input::selection {
 .ui.inverted.brown.basic.buttons .active.button,
 .ui.inverted.brown.buttons .basic.active.button,
 .ui.inverted.brown.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #cc6f0d inset !important;
   box-shadow: 0px 0px 0px 2px #cc6f0d inset !important;
   color: #D67C1C !important;
 }
@@ -2539,6 +2714,7 @@ input::selection {
 .ui.inverted.brown.basic.buttons .button:active,
 .ui.inverted.brown.buttons .basic.button:active,
 .ui.inverted.brown.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #a96216 inset !important;
   box-shadow: 0px 0px 0px 2px #a96216 inset !important;
   color: #D67C1C !important;
 }
@@ -2554,6 +2730,7 @@ input::selection {
 }
 
 .ui.blue.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2591,6 +2768,7 @@ input::selection {
 
 .ui.basic.blue.buttons .button,
 .ui.basic.blue.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #2185D0 inset !important;
   box-shadow: 0px 0px 0px 1px #2185D0 inset !important;
   color: #2185D0 !important;
 }
@@ -2598,6 +2776,7 @@ input::selection {
 .ui.basic.blue.buttons .button:hover,
 .ui.basic.blue.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #1678c2 inset !important;
   box-shadow: 0px 0px 0px 1px #1678c2 inset !important;
   color: #1678c2 !important;
 }
@@ -2605,6 +2784,7 @@ input::selection {
 .ui.basic.blue.buttons .button:focus,
 .ui.basic.blue.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #0d71bb inset !important;
   box-shadow: 0px 0px 0px 1px #0d71bb inset !important;
   color: #1678c2 !important;
 }
@@ -2612,12 +2792,14 @@ input::selection {
 .ui.basic.blue.buttons .active.button,
 .ui.basic.blue.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #1279c6 inset !important;
   box-shadow: 0px 0px 0px 1px #1279c6 inset !important;
   color: #1a69a4 !important;
 }
 
 .ui.basic.blue.buttons .button:active,
 .ui.basic.blue.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #1a69a4 inset !important;
   box-shadow: 0px 0px 0px 1px #1a69a4 inset !important;
   color: #1a69a4 !important;
 }
@@ -2631,6 +2813,7 @@ input::selection {
 .ui.inverted.blue.buttons .button,
 .ui.inverted.blue.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #54C8FF inset !important;
   box-shadow: 0px 0px 0px 2px #54C8FF inset !important;
   color: #54C8FF;
 }
@@ -2643,6 +2826,7 @@ input::selection {
 .ui.inverted.blue.button.active,
 .ui.inverted.blue.buttons .button:active,
 .ui.inverted.blue.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -2673,6 +2857,7 @@ input::selection {
 .ui.inverted.blue.buttons .basic.button,
 .ui.inverted.blue.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -2680,6 +2865,7 @@ input::selection {
 .ui.inverted.blue.basic.buttons .button:hover,
 .ui.inverted.blue.buttons .basic.button:hover,
 .ui.inverted.blue.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
   box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
   color: #54C8FF !important;
 }
@@ -2687,6 +2873,7 @@ input::selection {
 .ui.inverted.blue.basic.buttons .button:focus,
 .ui.inverted.blue.basic.buttons .button:focus,
 .ui.inverted.blue.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #2bbbff inset !important;
   box-shadow: 0px 0px 0px 2px #2bbbff inset !important;
   color: #54C8FF !important;
 }
@@ -2694,6 +2881,7 @@ input::selection {
 .ui.inverted.blue.basic.buttons .active.button,
 .ui.inverted.blue.buttons .basic.active.button,
 .ui.inverted.blue.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
   box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
   color: #54C8FF !important;
 }
@@ -2701,6 +2889,7 @@ input::selection {
 .ui.inverted.blue.basic.buttons .button:active,
 .ui.inverted.blue.buttons .basic.button:active,
 .ui.inverted.blue.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #21b8ff inset !important;
   box-shadow: 0px 0px 0px 2px #21b8ff inset !important;
   color: #54C8FF !important;
 }
@@ -2716,6 +2905,7 @@ input::selection {
 }
 
 .ui.green.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2753,6 +2943,7 @@ input::selection {
 
 .ui.basic.green.buttons .button,
 .ui.basic.green.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #21BA45 inset !important;
   box-shadow: 0px 0px 0px 1px #21BA45 inset !important;
   color: #21BA45 !important;
 }
@@ -2760,6 +2951,7 @@ input::selection {
 .ui.basic.green.buttons .button:hover,
 .ui.basic.green.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #16ab39 inset !important;
   box-shadow: 0px 0px 0px 1px #16ab39 inset !important;
   color: #16ab39 !important;
 }
@@ -2767,6 +2959,7 @@ input::selection {
 .ui.basic.green.buttons .button:focus,
 .ui.basic.green.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #0ea432 inset !important;
   box-shadow: 0px 0px 0px 1px #0ea432 inset !important;
   color: #16ab39 !important;
 }
@@ -2774,12 +2967,14 @@ input::selection {
 .ui.basic.green.buttons .active.button,
 .ui.basic.green.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #13ae38 inset !important;
   box-shadow: 0px 0px 0px 1px #13ae38 inset !important;
   color: #198f35 !important;
 }
 
 .ui.basic.green.buttons .button:active,
 .ui.basic.green.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #198f35 inset !important;
   box-shadow: 0px 0px 0px 1px #198f35 inset !important;
   color: #198f35 !important;
 }
@@ -2793,6 +2988,7 @@ input::selection {
 .ui.inverted.green.buttons .button,
 .ui.inverted.green.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #2ECC40 inset !important;
   box-shadow: 0px 0px 0px 2px #2ECC40 inset !important;
   color: #2ECC40;
 }
@@ -2805,6 +3001,7 @@ input::selection {
 .ui.inverted.green.button.active,
 .ui.inverted.green.buttons .button:active,
 .ui.inverted.green.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -2835,6 +3032,7 @@ input::selection {
 .ui.inverted.green.buttons .basic.button,
 .ui.inverted.green.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -2842,6 +3040,7 @@ input::selection {
 .ui.inverted.green.basic.buttons .button:hover,
 .ui.inverted.green.buttons .basic.button:hover,
 .ui.inverted.green.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #22be34 inset !important;
   box-shadow: 0px 0px 0px 2px #22be34 inset !important;
   color: #2ECC40 !important;
 }
@@ -2849,6 +3048,7 @@ input::selection {
 .ui.inverted.green.basic.buttons .button:focus,
 .ui.inverted.green.basic.buttons .button:focus,
 .ui.inverted.green.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #19b82b inset !important;
   box-shadow: 0px 0px 0px 2px #19b82b inset !important;
   color: #2ECC40 !important;
 }
@@ -2856,6 +3056,7 @@ input::selection {
 .ui.inverted.green.basic.buttons .active.button,
 .ui.inverted.green.buttons .basic.active.button,
 .ui.inverted.green.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #1fc231 inset !important;
   box-shadow: 0px 0px 0px 2px #1fc231 inset !important;
   color: #2ECC40 !important;
 }
@@ -2863,6 +3064,7 @@ input::selection {
 .ui.inverted.green.basic.buttons .button:active,
 .ui.inverted.green.buttons .basic.button:active,
 .ui.inverted.green.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #25a233 inset !important;
   box-shadow: 0px 0px 0px 2px #25a233 inset !important;
   color: #2ECC40 !important;
 }
@@ -2878,6 +3080,7 @@ input::selection {
 }
 
 .ui.orange.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -2915,6 +3118,7 @@ input::selection {
 
 .ui.basic.orange.buttons .button,
 .ui.basic.orange.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #F2711C inset !important;
   box-shadow: 0px 0px 0px 1px #F2711C inset !important;
   color: #F2711C !important;
 }
@@ -2922,6 +3126,7 @@ input::selection {
 .ui.basic.orange.buttons .button:hover,
 .ui.basic.orange.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #f26202 inset !important;
   box-shadow: 0px 0px 0px 1px #f26202 inset !important;
   color: #f26202 !important;
 }
@@ -2929,6 +3134,7 @@ input::selection {
 .ui.basic.orange.buttons .button:focus,
 .ui.basic.orange.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #e55b00 inset !important;
   box-shadow: 0px 0px 0px 1px #e55b00 inset !important;
   color: #f26202 !important;
 }
@@ -2936,12 +3142,14 @@ input::selection {
 .ui.basic.orange.buttons .active.button,
 .ui.basic.orange.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #f56100 inset !important;
   box-shadow: 0px 0px 0px 1px #f56100 inset !important;
   color: #cf590c !important;
 }
 
 .ui.basic.orange.buttons .button:active,
 .ui.basic.orange.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #cf590c inset !important;
   box-shadow: 0px 0px 0px 1px #cf590c inset !important;
   color: #cf590c !important;
 }
@@ -2955,6 +3163,7 @@ input::selection {
 .ui.inverted.orange.buttons .button,
 .ui.inverted.orange.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #FF851B inset !important;
   box-shadow: 0px 0px 0px 2px #FF851B inset !important;
   color: #FF851B;
 }
@@ -2967,6 +3176,7 @@ input::selection {
 .ui.inverted.orange.button.active,
 .ui.inverted.orange.buttons .button:active,
 .ui.inverted.orange.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -2997,6 +3207,7 @@ input::selection {
 .ui.inverted.orange.buttons .basic.button,
 .ui.inverted.orange.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3004,6 +3215,7 @@ input::selection {
 .ui.inverted.orange.basic.buttons .button:hover,
 .ui.inverted.orange.buttons .basic.button:hover,
 .ui.inverted.orange.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff7701 inset !important;
   box-shadow: 0px 0px 0px 2px #ff7701 inset !important;
   color: #FF851B !important;
 }
@@ -3011,6 +3223,7 @@ input::selection {
 .ui.inverted.orange.basic.buttons .button:focus,
 .ui.inverted.orange.basic.buttons .button:focus,
 .ui.inverted.orange.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #f17000 inset !important;
   box-shadow: 0px 0px 0px 2px #f17000 inset !important;
   color: #FF851B !important;
 }
@@ -3018,6 +3231,7 @@ input::selection {
 .ui.inverted.orange.basic.buttons .active.button,
 .ui.inverted.orange.buttons .basic.active.button,
 .ui.inverted.orange.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff7701 inset !important;
   box-shadow: 0px 0px 0px 2px #ff7701 inset !important;
   color: #FF851B !important;
 }
@@ -3025,6 +3239,7 @@ input::selection {
 .ui.inverted.orange.basic.buttons .button:active,
 .ui.inverted.orange.buttons .basic.button:active,
 .ui.inverted.orange.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #e76b00 inset !important;
   box-shadow: 0px 0px 0px 2px #e76b00 inset !important;
   color: #FF851B !important;
 }
@@ -3040,6 +3255,7 @@ input::selection {
 }
 
 .ui.pink.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3077,6 +3293,7 @@ input::selection {
 
 .ui.basic.pink.buttons .button,
 .ui.basic.pink.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #E03997 inset !important;
   box-shadow: 0px 0px 0px 1px #E03997 inset !important;
   color: #E03997 !important;
 }
@@ -3084,6 +3301,7 @@ input::selection {
 .ui.basic.pink.buttons .button:hover,
 .ui.basic.pink.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #e61a8d inset !important;
   box-shadow: 0px 0px 0px 1px #e61a8d inset !important;
   color: #e61a8d !important;
 }
@@ -3091,6 +3309,7 @@ input::selection {
 .ui.basic.pink.buttons .button:focus,
 .ui.basic.pink.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #e10f85 inset !important;
   box-shadow: 0px 0px 0px 1px #e10f85 inset !important;
   color: #e61a8d !important;
 }
@@ -3098,12 +3317,14 @@ input::selection {
 .ui.basic.pink.buttons .active.button,
 .ui.basic.pink.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #ea158d inset !important;
   box-shadow: 0px 0px 0px 1px #ea158d inset !important;
   color: #c71f7e !important;
 }
 
 .ui.basic.pink.buttons .button:active,
 .ui.basic.pink.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #c71f7e inset !important;
   box-shadow: 0px 0px 0px 1px #c71f7e inset !important;
   color: #c71f7e !important;
 }
@@ -3117,6 +3338,7 @@ input::selection {
 .ui.inverted.pink.buttons .button,
 .ui.inverted.pink.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #FF8EDF inset !important;
   box-shadow: 0px 0px 0px 2px #FF8EDF inset !important;
   color: #FF8EDF;
 }
@@ -3129,6 +3351,7 @@ input::selection {
 .ui.inverted.pink.button.active,
 .ui.inverted.pink.buttons .button:active,
 .ui.inverted.pink.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -3159,6 +3382,7 @@ input::selection {
 .ui.inverted.pink.buttons .basic.button,
 .ui.inverted.pink.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3166,6 +3390,7 @@ input::selection {
 .ui.inverted.pink.basic.buttons .button:hover,
 .ui.inverted.pink.buttons .basic.button:hover,
 .ui.inverted.pink.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
   box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
   color: #FF8EDF !important;
 }
@@ -3173,6 +3398,7 @@ input::selection {
 .ui.inverted.pink.basic.buttons .button:focus,
 .ui.inverted.pink.basic.buttons .button:focus,
 .ui.inverted.pink.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff65d3 inset !important;
   box-shadow: 0px 0px 0px 2px #ff65d3 inset !important;
   color: #FF8EDF !important;
 }
@@ -3180,6 +3406,7 @@ input::selection {
 .ui.inverted.pink.basic.buttons .active.button,
 .ui.inverted.pink.buttons .basic.active.button,
 .ui.inverted.pink.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
   box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
   color: #FF8EDF !important;
 }
@@ -3187,6 +3414,7 @@ input::selection {
 .ui.inverted.pink.basic.buttons .button:active,
 .ui.inverted.pink.buttons .basic.button:active,
 .ui.inverted.pink.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff5bd1 inset !important;
   box-shadow: 0px 0px 0px 2px #ff5bd1 inset !important;
   color: #FF8EDF !important;
 }
@@ -3202,6 +3430,7 @@ input::selection {
 }
 
 .ui.violet.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3239,6 +3468,7 @@ input::selection {
 
 .ui.basic.violet.buttons .button,
 .ui.basic.violet.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #6435C9 inset !important;
   box-shadow: 0px 0px 0px 1px #6435C9 inset !important;
   color: #6435C9 !important;
 }
@@ -3246,6 +3476,7 @@ input::selection {
 .ui.basic.violet.buttons .button:hover,
 .ui.basic.violet.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #5829bb inset !important;
   box-shadow: 0px 0px 0px 1px #5829bb inset !important;
   color: #5829bb !important;
 }
@@ -3253,6 +3484,7 @@ input::selection {
 .ui.basic.violet.buttons .button:focus,
 .ui.basic.violet.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #4f20b5 inset !important;
   box-shadow: 0px 0px 0px 1px #4f20b5 inset !important;
   color: #5829bb !important;
 }
@@ -3260,12 +3492,14 @@ input::selection {
 .ui.basic.violet.buttons .active.button,
 .ui.basic.violet.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #5626bf inset !important;
   box-shadow: 0px 0px 0px 1px #5626bf inset !important;
   color: #502aa1 !important;
 }
 
 .ui.basic.violet.buttons .button:active,
 .ui.basic.violet.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #502aa1 inset !important;
   box-shadow: 0px 0px 0px 1px #502aa1 inset !important;
   color: #502aa1 !important;
 }
@@ -3279,6 +3513,7 @@ input::selection {
 .ui.inverted.violet.buttons .button,
 .ui.inverted.violet.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #A291FB inset !important;
   box-shadow: 0px 0px 0px 2px #A291FB inset !important;
   color: #A291FB;
 }
@@ -3291,6 +3526,7 @@ input::selection {
 .ui.inverted.violet.button.active,
 .ui.inverted.violet.buttons .button:active,
 .ui.inverted.violet.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -3321,6 +3557,7 @@ input::selection {
 .ui.inverted.violet.buttons .basic.button,
 .ui.inverted.violet.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3328,6 +3565,7 @@ input::selection {
 .ui.inverted.violet.basic.buttons .button:hover,
 .ui.inverted.violet.buttons .basic.button:hover,
 .ui.inverted.violet.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #8a73ff inset !important;
   box-shadow: 0px 0px 0px 2px #8a73ff inset !important;
   color: #A291FB !important;
 }
@@ -3335,6 +3573,7 @@ input::selection {
 .ui.inverted.violet.basic.buttons .button:focus,
 .ui.inverted.violet.basic.buttons .button:focus,
 .ui.inverted.violet.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #7d64ff inset !important;
   box-shadow: 0px 0px 0px 2px #7d64ff inset !important;
   color: #A291FB !important;
 }
@@ -3342,6 +3581,7 @@ input::selection {
 .ui.inverted.violet.basic.buttons .active.button,
 .ui.inverted.violet.buttons .basic.active.button,
 .ui.inverted.violet.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #8a73ff inset !important;
   box-shadow: 0px 0px 0px 2px #8a73ff inset !important;
   color: #A291FB !important;
 }
@@ -3349,6 +3589,7 @@ input::selection {
 .ui.inverted.violet.basic.buttons .button:active,
 .ui.inverted.violet.buttons .basic.button:active,
 .ui.inverted.violet.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #7860f9 inset !important;
   box-shadow: 0px 0px 0px 2px #7860f9 inset !important;
   color: #A291FB !important;
 }
@@ -3364,6 +3605,7 @@ input::selection {
 }
 
 .ui.purple.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3401,6 +3643,7 @@ input::selection {
 
 .ui.basic.purple.buttons .button,
 .ui.basic.purple.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #A333C8 inset !important;
   box-shadow: 0px 0px 0px 1px #A333C8 inset !important;
   color: #A333C8 !important;
 }
@@ -3408,6 +3651,7 @@ input::selection {
 .ui.basic.purple.buttons .button:hover,
 .ui.basic.purple.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #9627ba inset !important;
   box-shadow: 0px 0px 0px 1px #9627ba inset !important;
   color: #9627ba !important;
 }
@@ -3415,6 +3659,7 @@ input::selection {
 .ui.basic.purple.buttons .button:focus,
 .ui.basic.purple.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #8f1eb4 inset !important;
   box-shadow: 0px 0px 0px 1px #8f1eb4 inset !important;
   color: #9627ba !important;
 }
@@ -3422,12 +3667,14 @@ input::selection {
 .ui.basic.purple.buttons .active.button,
 .ui.basic.purple.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #9724be inset !important;
   box-shadow: 0px 0px 0px 1px #9724be inset !important;
   color: #82299f !important;
 }
 
 .ui.basic.purple.buttons .button:active,
 .ui.basic.purple.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #82299f inset !important;
   box-shadow: 0px 0px 0px 1px #82299f inset !important;
   color: #82299f !important;
 }
@@ -3441,6 +3688,7 @@ input::selection {
 .ui.inverted.purple.buttons .button,
 .ui.inverted.purple.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #DC73FF inset !important;
   box-shadow: 0px 0px 0px 2px #DC73FF inset !important;
   color: #DC73FF;
 }
@@ -3453,6 +3701,7 @@ input::selection {
 .ui.inverted.purple.button.active,
 .ui.inverted.purple.buttons .button:active,
 .ui.inverted.purple.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -3483,6 +3732,7 @@ input::selection {
 .ui.inverted.purple.buttons .basic.button,
 .ui.inverted.purple.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3490,6 +3740,7 @@ input::selection {
 .ui.inverted.purple.basic.buttons .button:hover,
 .ui.inverted.purple.buttons .basic.button:hover,
 .ui.inverted.purple.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #d65aff inset !important;
   box-shadow: 0px 0px 0px 2px #d65aff inset !important;
   color: #DC73FF !important;
 }
@@ -3497,6 +3748,7 @@ input::selection {
 .ui.inverted.purple.basic.buttons .button:focus,
 .ui.inverted.purple.basic.buttons .button:focus,
 .ui.inverted.purple.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #d24aff inset !important;
   box-shadow: 0px 0px 0px 2px #d24aff inset !important;
   color: #DC73FF !important;
 }
@@ -3504,6 +3756,7 @@ input::selection {
 .ui.inverted.purple.basic.buttons .active.button,
 .ui.inverted.purple.buttons .basic.active.button,
 .ui.inverted.purple.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #d65aff inset !important;
   box-shadow: 0px 0px 0px 2px #d65aff inset !important;
   color: #DC73FF !important;
 }
@@ -3511,6 +3764,7 @@ input::selection {
 .ui.inverted.purple.basic.buttons .button:active,
 .ui.inverted.purple.buttons .basic.button:active,
 .ui.inverted.purple.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #cf40ff inset !important;
   box-shadow: 0px 0px 0px 2px #cf40ff inset !important;
   color: #DC73FF !important;
 }
@@ -3526,6 +3780,7 @@ input::selection {
 }
 
 .ui.red.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3563,6 +3818,7 @@ input::selection {
 
 .ui.basic.red.buttons .button,
 .ui.basic.red.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #DB2828 inset !important;
   box-shadow: 0px 0px 0px 1px #DB2828 inset !important;
   color: #DB2828 !important;
 }
@@ -3570,6 +3826,7 @@ input::selection {
 .ui.basic.red.buttons .button:hover,
 .ui.basic.red.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #d01919 inset !important;
   box-shadow: 0px 0px 0px 1px #d01919 inset !important;
   color: #d01919 !important;
 }
@@ -3577,6 +3834,7 @@ input::selection {
 .ui.basic.red.buttons .button:focus,
 .ui.basic.red.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #ca1010 inset !important;
   box-shadow: 0px 0px 0px 1px #ca1010 inset !important;
   color: #d01919 !important;
 }
@@ -3584,12 +3842,14 @@ input::selection {
 .ui.basic.red.buttons .active.button,
 .ui.basic.red.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #d41515 inset !important;
   box-shadow: 0px 0px 0px 1px #d41515 inset !important;
   color: #b21e1e !important;
 }
 
 .ui.basic.red.buttons .button:active,
 .ui.basic.red.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #b21e1e inset !important;
   box-shadow: 0px 0px 0px 1px #b21e1e inset !important;
   color: #b21e1e !important;
 }
@@ -3603,6 +3863,7 @@ input::selection {
 .ui.inverted.red.buttons .button,
 .ui.inverted.red.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #FF695E inset !important;
   box-shadow: 0px 0px 0px 2px #FF695E inset !important;
   color: #FF695E;
 }
@@ -3615,6 +3876,7 @@ input::selection {
 .ui.inverted.red.button.active,
 .ui.inverted.red.buttons .button:active,
 .ui.inverted.red.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #FFFFFF;
 }
@@ -3645,6 +3907,7 @@ input::selection {
 .ui.inverted.red.buttons .basic.button,
 .ui.inverted.red.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3652,6 +3915,7 @@ input::selection {
 .ui.inverted.red.basic.buttons .button:hover,
 .ui.inverted.red.buttons .basic.button:hover,
 .ui.inverted.red.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff5144 inset !important;
   box-shadow: 0px 0px 0px 2px #ff5144 inset !important;
   color: #FF695E !important;
 }
@@ -3659,6 +3923,7 @@ input::selection {
 .ui.inverted.red.basic.buttons .button:focus,
 .ui.inverted.red.basic.buttons .button:focus,
 .ui.inverted.red.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff4335 inset !important;
   box-shadow: 0px 0px 0px 2px #ff4335 inset !important;
   color: #FF695E !important;
 }
@@ -3666,6 +3931,7 @@ input::selection {
 .ui.inverted.red.basic.buttons .active.button,
 .ui.inverted.red.buttons .basic.active.button,
 .ui.inverted.red.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff5144 inset !important;
   box-shadow: 0px 0px 0px 2px #ff5144 inset !important;
   color: #FF695E !important;
 }
@@ -3673,6 +3939,7 @@ input::selection {
 .ui.inverted.red.basic.buttons .button:active,
 .ui.inverted.red.buttons .basic.button:active,
 .ui.inverted.red.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff392b inset !important;
   box-shadow: 0px 0px 0px 2px #ff392b inset !important;
   color: #FF695E !important;
 }
@@ -3688,6 +3955,7 @@ input::selection {
 }
 
 .ui.teal.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3725,6 +3993,7 @@ input::selection {
 
 .ui.basic.teal.buttons .button,
 .ui.basic.teal.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #00B5AD inset !important;
   box-shadow: 0px 0px 0px 1px #00B5AD inset !important;
   color: #00B5AD !important;
 }
@@ -3732,6 +4001,7 @@ input::selection {
 .ui.basic.teal.buttons .button:hover,
 .ui.basic.teal.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #009c95 inset !important;
   box-shadow: 0px 0px 0px 1px #009c95 inset !important;
   color: #009c95 !important;
 }
@@ -3739,6 +4009,7 @@ input::selection {
 .ui.basic.teal.buttons .button:focus,
 .ui.basic.teal.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #008c86 inset !important;
   box-shadow: 0px 0px 0px 1px #008c86 inset !important;
   color: #009c95 !important;
 }
@@ -3746,12 +4017,14 @@ input::selection {
 .ui.basic.teal.buttons .active.button,
 .ui.basic.teal.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #009c95 inset !important;
   box-shadow: 0px 0px 0px 1px #009c95 inset !important;
   color: #00827c !important;
 }
 
 .ui.basic.teal.buttons .button:active,
 .ui.basic.teal.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #00827c inset !important;
   box-shadow: 0px 0px 0px 1px #00827c inset !important;
   color: #00827c !important;
 }
@@ -3765,6 +4038,7 @@ input::selection {
 .ui.inverted.teal.buttons .button,
 .ui.inverted.teal.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #6DFFFF inset !important;
   box-shadow: 0px 0px 0px 2px #6DFFFF inset !important;
   color: #6DFFFF;
 }
@@ -3777,6 +4051,7 @@ input::selection {
 .ui.inverted.teal.button.active,
 .ui.inverted.teal.buttons .button:active,
 .ui.inverted.teal.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #2185D0;
 }
@@ -3807,6 +4082,7 @@ input::selection {
 .ui.inverted.teal.buttons .basic.button,
 .ui.inverted.teal.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3814,6 +4090,7 @@ input::selection {
 .ui.inverted.teal.basic.buttons .button:hover,
 .ui.inverted.teal.buttons .basic.button:hover,
 .ui.inverted.teal.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #54ffff inset !important;
   box-shadow: 0px 0px 0px 2px #54ffff inset !important;
   color: #6DFFFF !important;
 }
@@ -3821,6 +4098,7 @@ input::selection {
 .ui.inverted.teal.basic.buttons .button:focus,
 .ui.inverted.teal.basic.buttons .button:focus,
 .ui.inverted.teal.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #44ffff inset !important;
   box-shadow: 0px 0px 0px 2px #44ffff inset !important;
   color: #6DFFFF !important;
 }
@@ -3828,6 +4106,7 @@ input::selection {
 .ui.inverted.teal.basic.buttons .active.button,
 .ui.inverted.teal.buttons .basic.active.button,
 .ui.inverted.teal.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #54ffff inset !important;
   box-shadow: 0px 0px 0px 2px #54ffff inset !important;
   color: #6DFFFF !important;
 }
@@ -3835,6 +4114,7 @@ input::selection {
 .ui.inverted.teal.basic.buttons .button:active,
 .ui.inverted.teal.buttons .basic.button:active,
 .ui.inverted.teal.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #3affff inset !important;
   box-shadow: 0px 0px 0px 2px #3affff inset !important;
   color: #6DFFFF !important;
 }
@@ -3850,6 +4130,7 @@ input::selection {
 }
 
 .ui.olive.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -3887,6 +4168,7 @@ input::selection {
 
 .ui.basic.olive.buttons .button,
 .ui.basic.olive.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #B5CC18 inset !important;
   box-shadow: 0px 0px 0px 1px #B5CC18 inset !important;
   color: #B5CC18 !important;
 }
@@ -3894,6 +4176,7 @@ input::selection {
 .ui.basic.olive.buttons .button:hover,
 .ui.basic.olive.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #a7bd0d inset !important;
   box-shadow: 0px 0px 0px 1px #a7bd0d inset !important;
   color: #a7bd0d !important;
 }
@@ -3901,6 +4184,7 @@ input::selection {
 .ui.basic.olive.buttons .button:focus,
 .ui.basic.olive.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #a0b605 inset !important;
   box-shadow: 0px 0px 0px 1px #a0b605 inset !important;
   color: #a7bd0d !important;
 }
@@ -3908,12 +4192,14 @@ input::selection {
 .ui.basic.olive.buttons .active.button,
 .ui.basic.olive.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #aac109 inset !important;
   box-shadow: 0px 0px 0px 1px #aac109 inset !important;
   color: #8d9e13 !important;
 }
 
 .ui.basic.olive.buttons .button:active,
 .ui.basic.olive.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #8d9e13 inset !important;
   box-shadow: 0px 0px 0px 1px #8d9e13 inset !important;
   color: #8d9e13 !important;
 }
@@ -3927,6 +4213,7 @@ input::selection {
 .ui.inverted.olive.buttons .button,
 .ui.inverted.olive.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #D9E778 inset !important;
   box-shadow: 0px 0px 0px 2px #D9E778 inset !important;
   color: #D9E778;
 }
@@ -3939,6 +4226,7 @@ input::selection {
 .ui.inverted.olive.button.active,
 .ui.inverted.olive.buttons .button:active,
 .ui.inverted.olive.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #2185D0;
 }
@@ -3969,6 +4257,7 @@ input::selection {
 .ui.inverted.olive.buttons .basic.button,
 .ui.inverted.olive.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -3976,6 +4265,7 @@ input::selection {
 .ui.inverted.olive.basic.buttons .button:hover,
 .ui.inverted.olive.buttons .basic.button:hover,
 .ui.inverted.olive.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #d8ea5c inset !important;
   box-shadow: 0px 0px 0px 2px #d8ea5c inset !important;
   color: #D9E778 !important;
 }
@@ -3983,6 +4273,7 @@ input::selection {
 .ui.inverted.olive.basic.buttons .button:focus,
 .ui.inverted.olive.basic.buttons .button:focus,
 .ui.inverted.olive.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #daef47 inset !important;
   box-shadow: 0px 0px 0px 2px #daef47 inset !important;
   color: #D9E778 !important;
 }
@@ -3990,6 +4281,7 @@ input::selection {
 .ui.inverted.olive.basic.buttons .active.button,
 .ui.inverted.olive.buttons .basic.active.button,
 .ui.inverted.olive.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #daed59 inset !important;
   box-shadow: 0px 0px 0px 2px #daed59 inset !important;
   color: #D9E778 !important;
 }
@@ -3997,6 +4289,7 @@ input::selection {
 .ui.inverted.olive.basic.buttons .button:active,
 .ui.inverted.olive.buttons .basic.button:active,
 .ui.inverted.olive.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #cddf4d inset !important;
   box-shadow: 0px 0px 0px 2px #cddf4d inset !important;
   color: #D9E778 !important;
 }
@@ -4012,6 +4305,7 @@ input::selection {
 }
 
 .ui.yellow.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4049,6 +4343,7 @@ input::selection {
 
 .ui.basic.yellow.buttons .button,
 .ui.basic.yellow.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #FBBD08 inset !important;
   box-shadow: 0px 0px 0px 1px #FBBD08 inset !important;
   color: #FBBD08 !important;
 }
@@ -4056,6 +4351,7 @@ input::selection {
 .ui.basic.yellow.buttons .button:hover,
 .ui.basic.yellow.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
   box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
   color: #eaae00 !important;
 }
@@ -4063,6 +4359,7 @@ input::selection {
 .ui.basic.yellow.buttons .button:focus,
 .ui.basic.yellow.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #daa300 inset !important;
   box-shadow: 0px 0px 0px 1px #daa300 inset !important;
   color: #eaae00 !important;
 }
@@ -4070,12 +4367,14 @@ input::selection {
 .ui.basic.yellow.buttons .active.button,
 .ui.basic.yellow.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
   box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
   color: #cd9903 !important;
 }
 
 .ui.basic.yellow.buttons .button:active,
 .ui.basic.yellow.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #cd9903 inset !important;
   box-shadow: 0px 0px 0px 1px #cd9903 inset !important;
   color: #cd9903 !important;
 }
@@ -4089,6 +4388,7 @@ input::selection {
 .ui.inverted.yellow.buttons .button,
 .ui.inverted.yellow.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFE21F inset !important;
   box-shadow: 0px 0px 0px 2px #FFE21F inset !important;
   color: #FFE21F;
 }
@@ -4101,6 +4401,7 @@ input::selection {
 .ui.inverted.yellow.button.active,
 .ui.inverted.yellow.buttons .button:active,
 .ui.inverted.yellow.button:active {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #2185D0;
 }
@@ -4131,6 +4432,7 @@ input::selection {
 .ui.inverted.yellow.buttons .basic.button,
 .ui.inverted.yellow.basic.button {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
@@ -4138,6 +4440,7 @@ input::selection {
 .ui.inverted.yellow.basic.buttons .button:hover,
 .ui.inverted.yellow.buttons .basic.button:hover,
 .ui.inverted.yellow.basic.button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #ffdf05 inset !important;
   box-shadow: 0px 0px 0px 2px #ffdf05 inset !important;
   color: #FFE21F !important;
 }
@@ -4145,6 +4448,7 @@ input::selection {
 .ui.inverted.yellow.basic.buttons .button:focus,
 .ui.inverted.yellow.basic.buttons .button:focus,
 .ui.inverted.yellow.basic.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #f5d500 inset !important;
   box-shadow: 0px 0px 0px 2px #f5d500 inset !important;
   color: #FFE21F !important;
 }
@@ -4152,6 +4456,7 @@ input::selection {
 .ui.inverted.yellow.basic.buttons .active.button,
 .ui.inverted.yellow.buttons .basic.active.button,
 .ui.inverted.yellow.basic.active.button {
+  -webkit-box-shadow: 0px 0px 0px 2px #ffdf05 inset !important;
   box-shadow: 0px 0px 0px 2px #ffdf05 inset !important;
   color: #FFE21F !important;
 }
@@ -4159,6 +4464,7 @@ input::selection {
 .ui.inverted.yellow.basic.buttons .button:active,
 .ui.inverted.yellow.buttons .basic.button:active,
 .ui.inverted.yellow.basic.button:active {
+  -webkit-box-shadow: 0px 0px 0px 2px #ebcd00 inset !important;
   box-shadow: 0px 0px 0px 2px #ebcd00 inset !important;
   color: #FFE21F !important;
 }
@@ -4178,6 +4484,7 @@ input::selection {
 }
 
 .ui.primary.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4215,6 +4522,7 @@ input::selection {
 
 .ui.basic.primary.buttons .button,
 .ui.basic.primary.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #2185D0 inset !important;
   box-shadow: 0px 0px 0px 1px #2185D0 inset !important;
   color: #2185D0 !important;
 }
@@ -4222,6 +4530,7 @@ input::selection {
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #1678c2 inset !important;
   box-shadow: 0px 0px 0px 1px #1678c2 inset !important;
   color: #1678c2 !important;
 }
@@ -4229,6 +4538,7 @@ input::selection {
 .ui.basic.primary.buttons .button:focus,
 .ui.basic.primary.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #0d71bb inset !important;
   box-shadow: 0px 0px 0px 1px #0d71bb inset !important;
   color: #1678c2 !important;
 }
@@ -4236,12 +4546,14 @@ input::selection {
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #1279c6 inset !important;
   box-shadow: 0px 0px 0px 1px #1279c6 inset !important;
   color: #1a69a4 !important;
 }
 
 .ui.basic.primary.buttons .button:active,
 .ui.basic.primary.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #1a69a4 inset !important;
   box-shadow: 0px 0px 0px 1px #1a69a4 inset !important;
   color: #1a69a4 !important;
 }
@@ -4265,6 +4577,7 @@ input::selection {
 }
 
 .ui.secondary.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4302,6 +4615,7 @@ input::selection {
 
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
   box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
   color: #1B1C1D !important;
 }
@@ -4309,6 +4623,7 @@ input::selection {
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #27292a inset !important;
   box-shadow: 0px 0px 0px 1px #27292a inset !important;
   color: #27292a !important;
 }
@@ -4316,6 +4631,7 @@ input::selection {
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #2e3032 inset !important;
   box-shadow: 0px 0px 0px 1px #2e3032 inset !important;
   color: #27292a !important;
 }
@@ -4323,12 +4639,14 @@ input::selection {
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #27292a inset !important;
   box-shadow: 0px 0px 0px 1px #27292a inset !important;
   color: #343637 !important;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #343637 inset !important;
   box-shadow: 0px 0px 0px 1px #343637 inset !important;
   color: #343637 !important;
 }
@@ -4352,6 +4670,7 @@ input::selection {
 }
 
 .ui.positive.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4389,6 +4708,7 @@ input::selection {
 
 .ui.basic.positive.buttons .button,
 .ui.basic.positive.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #21BA45 inset !important;
   box-shadow: 0px 0px 0px 1px #21BA45 inset !important;
   color: #21BA45 !important;
 }
@@ -4396,6 +4716,7 @@ input::selection {
 .ui.basic.positive.buttons .button:hover,
 .ui.basic.positive.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #16ab39 inset !important;
   box-shadow: 0px 0px 0px 1px #16ab39 inset !important;
   color: #16ab39 !important;
 }
@@ -4403,6 +4724,7 @@ input::selection {
 .ui.basic.positive.buttons .button:focus,
 .ui.basic.positive.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #0ea432 inset !important;
   box-shadow: 0px 0px 0px 1px #0ea432 inset !important;
   color: #16ab39 !important;
 }
@@ -4410,12 +4732,14 @@ input::selection {
 .ui.basic.positive.buttons .active.button,
 .ui.basic.positive.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #13ae38 inset !important;
   box-shadow: 0px 0px 0px 1px #13ae38 inset !important;
   color: #198f35 !important;
 }
 
 .ui.basic.positive.buttons .button:active,
 .ui.basic.positive.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #198f35 inset !important;
   box-shadow: 0px 0px 0px 1px #198f35 inset !important;
   color: #198f35 !important;
 }
@@ -4439,6 +4763,7 @@ input::selection {
 }
 
 .ui.negative.button {
+  -webkit-box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4476,6 +4801,7 @@ input::selection {
 
 .ui.basic.negative.buttons .button,
 .ui.basic.negative.button {
+  -webkit-box-shadow: 0px 0px 0px 1px #DB2828 inset !important;
   box-shadow: 0px 0px 0px 1px #DB2828 inset !important;
   color: #DB2828 !important;
 }
@@ -4483,6 +4809,7 @@ input::selection {
 .ui.basic.negative.buttons .button:hover,
 .ui.basic.negative.button:hover {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #d01919 inset !important;
   box-shadow: 0px 0px 0px 1px #d01919 inset !important;
   color: #d01919 !important;
 }
@@ -4490,6 +4817,7 @@ input::selection {
 .ui.basic.negative.buttons .button:focus,
 .ui.basic.negative.button:focus {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #ca1010 inset !important;
   box-shadow: 0px 0px 0px 1px #ca1010 inset !important;
   color: #d01919 !important;
 }
@@ -4497,12 +4825,14 @@ input::selection {
 .ui.basic.negative.buttons .active.button,
 .ui.basic.negative.active.button {
   background: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 1px #d41515 inset !important;
   box-shadow: 0px 0px 0px 1px #d41515 inset !important;
   color: #b21e1e !important;
 }
 
 .ui.basic.negative.buttons .button:active,
 .ui.basic.negative.button:active {
+  -webkit-box-shadow: 0px 0px 0px 1px #b21e1e inset !important;
   box-shadow: 0px 0px 0px 1px #b21e1e inset !important;
   color: #b21e1e !important;
 }
@@ -4529,6 +4859,7 @@ input::selection {
 }
 
 .ui.buttons:not(.basic):not(.inverted) {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -4555,6 +4886,7 @@ input::selection {
 
 .ui.buttons > .ui.button:not(.basic):not(.inverted),
 .ui.buttons:not(.basic):not(.inverted) > .button {
+  -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -4587,6 +4919,7 @@ input::selection {
   float: none;
   width: 100%;
   margin: 0px 0px 0px 0px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0em;
 }
@@ -4614,7 +4947,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Container
+ * # Semantic UI 2.2.13 - Container
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4775,7 +5108,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Divider
+ * # Semantic UI 2.2.13 - Divider
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -5042,7 +5375,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Header
+ * # Semantic UI 2.2.13 - Header
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -5098,7 +5431,7 @@ input::selection {
   display: table-cell;
   opacity: 1;
   font-size: 1.5em;
-  padding-top: 0.14285714em;
+  padding-top: 0em;
   vertical-align: middle;
 }
 
@@ -5377,15 +5710,19 @@ h5.ui.header .sub.header {
 }
 
 .ui.inverted.attached.header {
+  background: #545454 -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
   background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: none;
   box-shadow: none;
   border-color: transparent;
 }
 
 .ui.inverted.block.header {
+  background: #545454 -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
   background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -5765,6 +6102,7 @@ a.ui.inverted.grey.header:hover {
 .ui.block.header {
   background: #F3F4F5;
   padding: 0.78571429rem 1rem;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #D4D4D5;
   border-radius: 0.28571429rem;
@@ -5799,6 +6137,7 @@ a.ui.inverted.grey.header:hover {
   padding: 0.78571429rem 1rem;
   margin-left: -1px;
   margin-right: -1px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #D4D4D5;
 }
@@ -5863,7 +6202,7 @@ a.ui.inverted.grey.header:hover {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Icon
+ * # Semantic UI 2.2.13 - Icon
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6007,6 +6346,7 @@ i.circular.icon {
   border-radius: 500em !important;
   line-height: 1 !important;
   padding: 0.5em 0.5em !important;
+  -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
   width: 2em !important;
   height: 2em !important;
@@ -6014,6 +6354,7 @@ i.circular.icon {
 
 i.circular.inverted.icon {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -6059,11 +6400,13 @@ i.bordered.icon {
   width: 2em;
   height: 2em;
   padding: 0.5em 0.41em !important;
+  -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
 }
 
 i.bordered.inverted.icon {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -6391,6 +6734,34 @@ i.icons .corner.icon {
   transform: none;
   font-size: 0.45em;
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+}
+
+i.icons .top.right.corner.icon {
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: auto;
+}
+
+i.icons .top.left.corner.icon {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+
+i.icons .bottom.left.corner.icon {
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: 0;
+}
+
+i.icons .bottom.right.corner.icon {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
 }
 
 i.icons .inverted.corner.icon {
@@ -10113,7 +10484,7 @@ i.icon.times.rectangle.outline:before {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Image
+ * # Semantic UI 2.2.13 - Image
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -10430,7 +10801,7 @@ img.ui.bordered.image {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Input
+ * # Semantic UI 2.2.13 - Input
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -10473,8 +10844,11 @@ img.ui.bordered.image {
   border: 1px solid rgba(34, 36, 38, 0.15);
   color: rgba(0, 0, 0, 0.87);
   border-radius: 0.28571429rem;
-  -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  -webkit-transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -10505,12 +10879,12 @@ img.ui.bordered.image {
 ---------------------*/
 
 .ui.disabled.input,
-.ui.input input[disabled] {
+.ui.input:not(.disabled) input[disabled] {
   opacity: 0.45;
 }
 
 .ui.disabled.input input,
-.ui.input input[disabled] {
+.ui.input:not(.disabled) input[disabled] {
   pointer-events: none;
 }
 
@@ -10523,6 +10897,7 @@ img.ui.bordered.image {
   border-color: rgba(0, 0, 0, 0.3);
   background: #FAFAFA;
   color: rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -10558,6 +10933,7 @@ img.ui.bordered.image {
   border-color: #767676 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent;
   box-shadow: 0px 0px 0px 1px transparent;
 }
 
@@ -10570,6 +10946,7 @@ img.ui.bordered.image {
   border-color: #85B7D9;
   background: #FFFFFF;
   color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -10596,6 +10973,7 @@ img.ui.bordered.image {
   background-color: #FFF6F6;
   border-color: #E0B4B4;
   color: #9F3A38;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -10639,7 +11017,9 @@ img.ui.bordered.image {
   border-color: transparent !important;
   background-color: transparent !important;
   padding: 0em !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
+  border-radius: 0px !important;
 }
 
 /* Transparent Icon */
@@ -10993,7 +11373,7 @@ img.ui.bordered.image {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Label
+ * # Semantic UI 2.2.13 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11159,6 +11539,7 @@ a.ui.label {
   background: #E8E8E8;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
   border-radius: 0.28571429rem;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -11218,6 +11599,7 @@ a.ui.label {
   background-color: #FFFFFF !important;
   width: 0.5em;
   height: 0.5em;
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
   border-radius: 500rem;
 }
@@ -12144,6 +12526,7 @@ a.ui.basic.black.label:hover {
   background: none #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
   color: rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -12153,7 +12536,9 @@ a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
   color: #1e70bf;
+  -webkit-box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -12170,6 +12555,7 @@ a.ui.basic.label:hover {
 .ui.label.fluid,
 .ui.fluid.labels > .label {
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -12418,7 +12804,7 @@ a.ui.basic.label:hover {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - List
+ * # Semantic UI 2.2.13 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -12521,7 +12907,7 @@ ol.ui.list ol li,
 .ui.list > .item > i.icon {
   display: table-cell;
   margin: 0em;
-  padding-top: 0.07142857em;
+  padding-top: 0em;
   padding-right: 0.28571429em;
   vertical-align: top;
   -webkit-transition: color 0.1s ease;
@@ -13495,7 +13881,7 @@ ol.ui.horizontal.list li:before,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Segment
+ * # Semantic UI 2.2.13 - Segment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13511,6 +13897,7 @@ ol.ui.horizontal.list li:before,
 .ui.segment {
   position: relative;
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   margin: 1rem 0em;
   padding: 1em 1em;
@@ -13534,6 +13921,7 @@ ol.ui.horizontal.list li:before,
   padding-right: 0em;
   background: none transparent;
   border-radius: 0px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
@@ -13594,6 +13982,7 @@ ol.ui.horizontal.list li:before,
 .ui.basic.table.segment {
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
 }
 
@@ -13612,6 +14001,7 @@ ol.ui.horizontal.list li:before,
 .ui.piled.segments,
 .ui.piled.segment {
   margin: 3em 0em;
+  -webkit-box-shadow: '';
   box-shadow: '';
   z-index: auto;
 }
@@ -13637,6 +14027,7 @@ ol.ui.horizontal.list li:before,
   position: absolute;
   width: 100%;
   border: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: '';
   box-shadow: '';
 }
 
@@ -13784,6 +14175,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.raised.segments,
 .ui.raised.segment {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
   box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -13801,6 +14193,7 @@ ol.ui.horizontal.list li:before,
   position: relative;
   margin: 1rem 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   border-radius: 0.28571429rem;
 }
@@ -13821,6 +14214,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0px;
   margin: 0em;
   width: auto;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
@@ -13842,6 +14236,7 @@ ol.ui.horizontal.list li:before,
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 0em;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
@@ -13881,6 +14276,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0px;
   padding: 0em;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   margin: 1rem 0em;
   border-radius: 0.28571429rem;
@@ -13894,6 +14290,7 @@ ol.ui.horizontal.list li:before,
   background-color: transparent;
   border-radius: 0px;
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
 }
@@ -13910,6 +14307,7 @@ ol.ui.horizontal.list li:before,
   background-color: transparent;
   border-radius: 0px;
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
 }
@@ -13979,6 +14377,7 @@ ol.ui.horizontal.list li:before,
   border-color: #767676 rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 0.2em;
+  -webkit-box-shadow: 0px 0px 0px 1px transparent;
   box-shadow: 0px 0px 0px 1px transparent;
   visibility: visible;
   z-index: 101;
@@ -14018,6 +14417,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.basic.segment {
   background: none transparent;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   border-radius: 0px;
@@ -14042,7 +14442,7 @@ ol.ui.horizontal.list li:before,
 /* Red */
 
 .ui.red.segment:not(.inverted) {
-  border-top: 2px solid #DB2828;
+  border-top: 2px solid #DB2828 !important;
 }
 
 .ui.inverted.red.segment {
@@ -14053,7 +14453,7 @@ ol.ui.horizontal.list li:before,
 /* Orange */
 
 .ui.orange.segment:not(.inverted) {
-  border-top: 2px solid #F2711C;
+  border-top: 2px solid #F2711C !important;
 }
 
 .ui.inverted.orange.segment {
@@ -14064,7 +14464,7 @@ ol.ui.horizontal.list li:before,
 /* Yellow */
 
 .ui.yellow.segment:not(.inverted) {
-  border-top: 2px solid #FBBD08;
+  border-top: 2px solid #FBBD08 !important;
 }
 
 .ui.inverted.yellow.segment {
@@ -14075,7 +14475,7 @@ ol.ui.horizontal.list li:before,
 /* Olive */
 
 .ui.olive.segment:not(.inverted) {
-  border-top: 2px solid #B5CC18;
+  border-top: 2px solid #B5CC18 !important;
 }
 
 .ui.inverted.olive.segment {
@@ -14086,7 +14486,7 @@ ol.ui.horizontal.list li:before,
 /* Green */
 
 .ui.green.segment:not(.inverted) {
-  border-top: 2px solid #21BA45;
+  border-top: 2px solid #21BA45 !important;
 }
 
 .ui.inverted.green.segment {
@@ -14097,7 +14497,7 @@ ol.ui.horizontal.list li:before,
 /* Teal */
 
 .ui.teal.segment:not(.inverted) {
-  border-top: 2px solid #00B5AD;
+  border-top: 2px solid #00B5AD !important;
 }
 
 .ui.inverted.teal.segment {
@@ -14108,7 +14508,7 @@ ol.ui.horizontal.list li:before,
 /* Blue */
 
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #2185D0;
+  border-top: 2px solid #2185D0 !important;
 }
 
 .ui.inverted.blue.segment {
@@ -14119,7 +14519,7 @@ ol.ui.horizontal.list li:before,
 /* Violet */
 
 .ui.violet.segment:not(.inverted) {
-  border-top: 2px solid #6435C9;
+  border-top: 2px solid #6435C9 !important;
 }
 
 .ui.inverted.violet.segment {
@@ -14130,7 +14530,7 @@ ol.ui.horizontal.list li:before,
 /* Purple */
 
 .ui.purple.segment:not(.inverted) {
-  border-top: 2px solid #A333C8;
+  border-top: 2px solid #A333C8 !important;
 }
 
 .ui.inverted.purple.segment {
@@ -14141,7 +14541,7 @@ ol.ui.horizontal.list li:before,
 /* Pink */
 
 .ui.pink.segment:not(.inverted) {
-  border-top: 2px solid #E03997;
+  border-top: 2px solid #E03997 !important;
 }
 
 .ui.inverted.pink.segment {
@@ -14152,7 +14552,7 @@ ol.ui.horizontal.list li:before,
 /* Brown */
 
 .ui.brown.segment:not(.inverted) {
-  border-top: 2px solid #A5673F;
+  border-top: 2px solid #A5673F !important;
 }
 
 .ui.inverted.brown.segment {
@@ -14163,7 +14563,7 @@ ol.ui.horizontal.list li:before,
 /* Grey */
 
 .ui.grey.segment:not(.inverted) {
-  border-top: 2px solid #767676;
+  border-top: 2px solid #767676 !important;
 }
 
 .ui.inverted.grey.segment {
@@ -14174,7 +14574,7 @@ ol.ui.horizontal.list li:before,
 /* Black */
 
 .ui.black.segment:not(.inverted) {
-  border-top: 2px solid #1B1C1D;
+  border-top: 2px solid #1B1C1D !important;
 }
 
 .ui.inverted.black.segment {
@@ -14219,6 +14619,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.inverted.segment {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -14256,6 +14657,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.secondary.inverted.segment {
+  background: #4c4f52 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2)));
   background: #4c4f52 -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   background: #4c4f52 linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   color: rgba(255, 255, 255, 0.8);
@@ -14269,6 +14671,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.tertiary.inverted.segment {
+  background: #717579 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.35)), to(rgba(255, 255, 255, 0.35)));
   background: #717579 -webkit-linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
   background: #717579 linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
   color: rgba(255, 255, 255, 0.8);
@@ -14287,6 +14690,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em -1px;
   width: calc(100% +  2px );
   max-width: calc(100% +  2px );
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #D4D4D5;
 }
@@ -14316,6 +14720,7 @@ ol.ui.horizontal.list li:before,
   margin-top: 0em;
   top: 0px;
   margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
@@ -14376,7 +14781,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Grid
+ * # Semantic UI 2.2.13 - Grid
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14543,6 +14948,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.grid > .row > .column:last-child > .horizontal.segment,
 .ui.grid > .column:last-child > .horizontal.segment {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -14766,6 +15172,7 @@ ol.ui.horizontal.list li:before,
 /* Celled Page */
 
 .ui.celled.page.grid {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15565,6 +15972,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
 .ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
   box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -15587,6 +15995,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
 .ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15599,10 +16008,12 @@ ol.ui.horizontal.list li:before,
 /* Divided Row */
 
 .ui.grid > .divided.row > .column {
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
   box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
 .ui.grid > .divided.row > .column:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15620,6 +16031,7 @@ ol.ui.horizontal.list li:before,
   width: calc(100% -  2rem );
   height: 1px;
   margin: 0% 1rem;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
   box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -15633,6 +16045,7 @@ ol.ui.horizontal.list li:before,
 /* First Row Vertically Divided */
 
 .ui[class*="vertically divided"].grid > .row:first-child:before {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15640,15 +16053,18 @@ ol.ui.horizontal.list li:before,
 
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
   box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
 }
 
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .ui.inverted[class*="vertically divided"].grid > .row:before {
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
   box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
 }
 
@@ -15673,6 +16089,7 @@ ol.ui.horizontal.list li:before,
 .ui.celled.grid {
   width: 100%;
   margin: 1em 0em;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5;
   box-shadow: 0px 0px 0px 1px #D4D4D5;
 }
 
@@ -15680,16 +16097,19 @@ ol.ui.horizontal.list li:before,
   width: 100% !important;
   margin: 0em;
   padding: 0em;
+  -webkit-box-shadow: 0px -1px 0px 0px #D4D4D5;
   box-shadow: 0px -1px 0px 0px #D4D4D5;
 }
 
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
+  -webkit-box-shadow: -1px 0px 0px 0px #D4D4D5;
   box-shadow: -1px 0px 0px 0px #D4D4D5;
 }
 
 .ui.celled.grid > .column:first-child,
 .ui.celled.grid > .row > .column:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15711,15 +16131,18 @@ ol.ui.horizontal.list li:before,
 /* Internally Celled */
 
 .ui[class*="internally celled"].grid {
+  -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0em;
 }
 
 .ui[class*="internally celled"].grid > .row:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .ui[class*="internally celled"].grid > .row > .column:first-child {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -15756,7 +16179,6 @@ ol.ui.horizontal.list li:before,
   flex-direction: column;
   vertical-align: middle;
   -ms-flex-item-align: center !important;
-  -ms-grid-row-align: center !important;
   align-self: center !important;
 }
 
@@ -15817,7 +16239,6 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > [class*="left aligned"].column.column {
   text-align: left;
   -ms-flex-item-align: inherit;
-  -ms-grid-row-align: inherit;
   align-self: inherit;
 }
 
@@ -15830,7 +16251,6 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > [class*="center aligned"].column.column {
   text-align: center;
   -ms-flex-item-align: inherit;
-  -ms-grid-row-align: inherit;
   align-self: inherit;
 }
 
@@ -15849,7 +16269,6 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > [class*="right aligned"].column.column {
   text-align: right;
   -ms-flex-item-align: inherit;
-  -ms-grid-row-align: inherit;
   align-self: inherit;
 }
 
@@ -16055,31 +16474,37 @@ ol.ui.horizontal.list li:before,
 
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Vertically Divided Reversed */
 
   .ui.grid[class*="vertically divided"][class*="mobile vertically reversed"] > .row:first-child:before {
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui.grid[class*="vertically divided"][class*="mobile vertically reversed"] > .row:last-child:before {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Celled Reversed */
 
   .ui[class*="mobile reversed"].celled.grid > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px #D4D4D5;
     box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
 
   .ui[class*="mobile reversed"].celled.grid > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -16107,31 +16532,37 @@ ol.ui.horizontal.list li:before,
 
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Vertically Divided Reversed */
 
   .ui.grid[class*="vertically divided"][class*="tablet vertically reversed"] > .row:first-child:before {
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui.grid[class*="vertically divided"][class*="tablet vertically reversed"] > .row:last-child:before {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Celled Reversed */
 
   .ui[class*="tablet reversed"].celled.grid > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px #D4D4D5;
     box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
 
   .ui[class*="tablet reversed"].celled.grid > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -16159,31 +16590,37 @@ ol.ui.horizontal.list li:before,
 
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Vertically Divided Reversed */
 
   .ui.grid[class*="vertically divided"][class*="computer vertically reversed"] > .row:first-child:before {
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
     box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
   }
 
   .ui.grid[class*="vertically divided"][class*="computer vertically reversed"] > .row:last-child:before {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   /* Celled Reversed */
 
   .ui[class*="computer reversed"].celled.grid > .row > .column:first-child {
+    -webkit-box-shadow: -1px 0px 0px 0px #D4D4D5;
     box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
 
   .ui[class*="computer reversed"].celled.grid > .row > .column:last-child {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -16210,6 +16647,7 @@ ol.ui.horizontal.list li:before,
     display: inline-block !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     margin: 0em;
   }
@@ -16319,6 +16757,7 @@ ol.ui.horizontal.list li:before,
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
     margin: 0em !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
 
@@ -16433,6 +16872,7 @@ ol.ui.horizontal.list li:before,
   .ui.grid > .stackable.stackable.row > .column {
     width: 100% !important;
     margin: 0em 0em !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     padding: 1rem 1rem !important;
   }
@@ -16479,12 +16919,14 @@ ol.ui.horizontal.list li:before,
   .ui.stackable.celled.grid > .row > .column,
   .ui.stackable.divided:not(.vertically).grid > .row > .column {
     border-top: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
 
   .ui.stackable.celled.grid > .row {
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
 
@@ -16648,7 +17090,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Statistic
+ * # Semantic UI 2.2.13 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17284,7 +17726,7 @@ ol.ui.horizontal.list li:before,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Checkbox
+ * # Semantic UI 2.2.13 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17354,10 +17796,10 @@ ol.ui.horizontal.list li:before,
   content: '';
   background: #FFFFFF;
   border-radius: 0.21428571rem;
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
-  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
   border: 1px solid #D4D4D5;
 }
 
@@ -17376,10 +17818,10 @@ ol.ui.horizontal.list li:before,
   text-align: center;
   opacity: 0;
   color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
-  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
 }
 
 /*--------------
@@ -17700,6 +18142,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.slider.checkbox .box:after,
 .ui.slider.checkbox label:after {
+  background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
   background: #FFFFFF -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: #FFFFFF linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   position: absolute;
@@ -17707,6 +18150,7 @@ ol.ui.horizontal.list li:before,
   opacity: 1;
   z-index: 2;
   border: none;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   width: 1.5rem;
   height: 1.5rem;
@@ -17809,6 +18253,7 @@ ol.ui.horizontal.list li:before,
   border: none;
   top: 0rem;
   background: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: none;
   box-shadow: none;
   width: 3.5rem;
   height: 1.5rem;
@@ -17819,6 +18264,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.toggle.checkbox .box:after,
 .ui.toggle.checkbox label:after {
+  background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
   background: #FFFFFF -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: #FFFFFF linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   position: absolute;
@@ -17826,6 +18272,7 @@ ol.ui.horizontal.list li:before,
   opacity: 1;
   z-index: 2;
   border: none;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   width: 1.5rem;
   height: 1.5rem;
@@ -17839,6 +18286,7 @@ ol.ui.horizontal.list li:before,
 .ui.toggle.checkbox input ~ .box:after,
 .ui.toggle.checkbox input ~ label:after {
   left: -0.05rem;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -17873,6 +18321,7 @@ ol.ui.horizontal.list li:before,
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
   left: 2.15rem;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -17952,7 +18401,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Progress Bar
+ * # Semantic UI 2.2.13 - Progress Bar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17971,6 +18420,7 @@ ol.ui.horizontal.list li:before,
   max-width: 100%;
   border: none;
   margin: 1em 0em 2.5em;
+  -webkit-box-shadow: none;
   box-shadow: none;
   background: rgba(0, 0, 0, 0.1);
   padding: 0em;
@@ -18531,4 +18981,525 @@ ol.ui.horizontal.list li:before,
 
 /*******************************
          Site Overrides
+*******************************/
+/*!
+ * # Semantic UI 2.2.13 - Item
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0em;
+  width: 100%;
+  min-height: 0px;
+  background: transparent;
+  padding: 0em;
+  border: none;
+  border-radius: 0rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.1s ease;
+  transition: -webkit-box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
+  z-index: '';
+}
+
+.ui.items > .item a {
+  cursor: pointer;
+}
+
+/*--------------
+      Items
+---------------*/
+
+.ui.items {
+  margin: 1.5em 0em;
+}
+
+.ui.items:first-child {
+  margin-top: 0em !important;
+}
+
+.ui.items:last-child {
+  margin-bottom: 0em !important;
+}
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.ui.items > .item:first-child {
+  margin-top: 0em;
+}
+
+.ui.items > .item:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+     Images
+---------------*/
+
+.ui.items > .item > .image {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  float: none;
+  margin: 0em;
+  padding: 0em;
+  max-height: '';
+  -ms-flex-item-align: top;
+  align-self: top;
+}
+
+.ui.items > .item > .image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.125rem;
+  border: none;
+}
+
+.ui.items > .item > .image:only-child > img {
+  border-radius: 0rem;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.items > .item > .content {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background: none;
+  margin: 0em;
+  padding: 0em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 1em;
+  border: none;
+  border-radius: 0em;
+}
+
+.ui.items > .item > .content:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.ui.items > .item > .image + .content {
+  min-width: 0;
+  width: auto;
+  display: block;
+  margin-left: 0em;
+  -ms-flex-item-align: top;
+  align-self: top;
+  padding-left: 1.5em;
+}
+
+.ui.items > .item > .content > .header {
+  display: inline-block;
+  margin: -0.21425em 0em 0em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Default Header Size */
+
+.ui.items > .item > .content > .header:not(.ui) {
+  font-size: 1.28571429em;
+}
+
+/*--------------
+     Floated
+---------------*/
+
+.ui.items > .item [class*="left floated"] {
+  float: left;
+}
+
+.ui.items > .item [class*="right floated"] {
+  float: right;
+}
+
+/*--------------
+  Content Image
+---------------*/
+
+.ui.items > .item .content img {
+  -ms-flex-item-align: middle;
+  align-self: middle;
+  width: '';
+}
+
+.ui.items > .item img.avatar,
+.ui.items > .item .avatar img {
+  width: '';
+  height: '';
+  border-radius: 500rem;
+}
+
+/*--------------
+   Description
+---------------*/
+
+.ui.items > .item > .content > .description {
+  margin-top: 0.6em;
+  max-width: auto;
+  font-size: 1em;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*--------------
+    Paragraph
+---------------*/
+
+.ui.items > .item > .content p {
+  margin: 0em 0em 0.5em;
+}
+
+.ui.items > .item > .content p:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+      Meta
+---------------*/
+
+.ui.items > .item .meta {
+  margin: 0.5em 0em 0.5em;
+  font-size: 1em;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ui.items > .item .meta * {
+  margin-right: 0.3em;
+}
+
+.ui.items > .item .meta :last-child {
+  margin-right: 0em;
+}
+
+.ui.items > .item .meta [class*="right floated"] {
+  margin-right: 0em;
+  margin-left: 0.3em;
+}
+
+/*--------------
+      Links
+---------------*/
+
+/* Generic */
+
+.ui.items > .item > .content a:not(.ui) {
+  color: '';
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.ui.items > .item > .content a:not(.ui):hover {
+  color: '';
+}
+
+/* Header */
+
+.ui.items > .item > .content > a.header {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.ui.items > .item > .content > a.header:hover {
+  color: #1e70bf;
+}
+
+/* Meta */
+
+.ui.items > .item .meta > a:not(.ui) {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.items > .item .meta > a:not(.ui):hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*--------------
+     Labels
+---------------*/
+
+/*-----Star----- */
+
+/* Icon */
+
+.ui.items > .item > .content .favorite.icon {
+  cursor: pointer;
+  opacity: 0.75;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.ui.items > .item > .content .favorite.icon:hover {
+  opacity: 1;
+  color: #FFB70A;
+}
+
+.ui.items > .item > .content .active.favorite.icon {
+  color: #FFE623;
+}
+
+/*-----Like----- */
+
+/* Icon */
+
+.ui.items > .item > .content .like.icon {
+  cursor: pointer;
+  opacity: 0.75;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.ui.items > .item > .content .like.icon:hover {
+  opacity: 1;
+  color: #FF2733;
+}
+
+.ui.items > .item > .content .active.like.icon {
+  color: #FF2733;
+}
+
+/*----------------
+  Extra Content
+-----------------*/
+
+.ui.items > .item .extra {
+  display: block;
+  position: relative;
+  background: none;
+  margin: 0.5rem 0em 0em;
+  width: 100%;
+  padding: 0em 0em 0em;
+  top: 0em;
+  left: 0em;
+  color: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  border-top: none;
+}
+
+.ui.items > .item .extra > * {
+  margin: 0.25rem 0.5rem 0.25rem 0em;
+}
+
+.ui.items > .item .extra > [class*="right floated"] {
+  margin: 0.25rem 0em 0.25rem 0.5rem;
+}
+
+.ui.items > .item .extra:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*******************************
+          Responsive
+*******************************/
+
+/* Default Image Width */
+
+.ui.items > .item > .image:not(.ui) {
+  width: 175px;
+}
+
+/* Tablet Only */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.items > .item {
+    margin: 1em 0em;
+  }
+
+  .ui.items > .item > .image:not(.ui) {
+    width: 150px;
+  }
+
+  .ui.items > .item > .image + .content {
+    display: block;
+    padding: 0em 0em 0em 1em;
+  }
+}
+
+/* Mobile Only */
+
+@media only screen and (max-width: 767px) {
+  .ui.items:not(.unstackable) > .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 2em 0em;
+  }
+
+  .ui.items:not(.unstackable) > .item > .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ui.items:not(.unstackable) > .item > .image,
+  .ui.items:not(.unstackable) > .item > .image > img {
+    max-width: 100% !important;
+    width: auto !important;
+    max-height: 250px !important;
+  }
+
+  .ui.items:not(.unstackable) > .item > .image + .content {
+    display: block;
+    padding: 1.5em 0em 0em;
+  }
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui.items > .item > .image + [class*="top aligned"].content {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.ui.items > .item > .image + [class*="middle aligned"].content {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.ui.items > .item > .image + [class*="bottom aligned"].content {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+/*--------------
+     Relaxed
+---------------*/
+
+.ui.relaxed.items > .item {
+  margin: 1.5em 0em;
+}
+
+.ui[class*="very relaxed"].items > .item {
+  margin: 2em 0em;
+}
+
+/*-------------------
+      Divided
+--------------------*/
+
+.ui.divided.items > .item {
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  margin: 0em;
+  padding: 1em 0em;
+}
+
+.ui.divided.items > .item:first-child {
+  border-top: none;
+  margin-top: 0em !important;
+  padding-top: 0em !important;
+}
+
+.ui.divided.items > .item:last-child {
+  margin-bottom: 0em !important;
+  padding-bottom: 0em !important;
+}
+
+/* Relaxed Divided */
+
+.ui.relaxed.divided.items > .item {
+  margin: 0em;
+  padding: 1.5em 0em;
+}
+
+.ui[class*="very relaxed"].divided.items > .item {
+  margin: 0em;
+  padding: 2em 0em;
+}
+
+/*-------------------
+        Link
+--------------------*/
+
+.ui.items a.item:hover,
+.ui.link.items > .item:hover {
+  cursor: pointer;
+}
+
+.ui.items a.item:hover .content .header,
+.ui.link.items > .item:hover .content .header {
+  color: #1e70bf;
+}
+
+/*--------------
+      Size
+---------------*/
+
+.ui.items > .item {
+  font-size: 1em;
+}
+
+/*---------------
+   Unstackable
+----------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.unstackable.items > .item > .image,
+  .ui.unstackable.items > .item > .image > img {
+    width: 125px !important;
+  }
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
 *******************************/

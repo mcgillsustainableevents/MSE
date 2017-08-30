@@ -52,11 +52,11 @@ class TextInput extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, { history, to }) => {
   return {
     setKV: (key, value) => {
       dispatch(setKV(key, value));
-      dispatch(nextView());
+      history.replace(to);
     }
   };
 };

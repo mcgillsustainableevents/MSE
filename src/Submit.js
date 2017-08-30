@@ -4,6 +4,7 @@ import 'whatwg-fetch';
 import { connect } from 'react-redux';
 import { nextView } from './actions.js';
 import Centered from './Centered';
+import { Link } from 'react-router-dom';
 
 const Submit = props => {
   const handleClick = () => {
@@ -15,7 +16,6 @@ const Submit = props => {
     );
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify(props.data));
-    props.nextView();
   };
   return (
     <Centered>
@@ -43,16 +43,15 @@ const Submit = props => {
           </List.Item>
         </List>
         <Divider hidden fitted />
-        <Button onClick={handleClick} fluid size="large">
-          Send to MSE
-        </Button>
+        <Link to="/complete">
+          <Button onClick={handleClick} fluid size="large">
+            Send to MSE
+          </Button>
+        </Link>
         <br />
         <p style={{ textAlign: 'center' }}>
           If you have any questions, comments, or concerns, please contact us at any time at{' '}
-          <a
-            style={{ color: 'white', textDecoration: 'underline' }}
-            href="mailto:events.sustainability@mcgill.ca"
-          >
+          <a className="landing-link" href="mailto:events.sustainability@mcgill.ca">
             events.sustainability@mcgill.ca
           </a>
         </p>
@@ -67,10 +66,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    nextView: () => dispatch(nextView())
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Submit);
+export default connect(mapStateToProps)(Submit);

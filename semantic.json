@@ -35,7 +35,8 @@
     "statistic",
     "checkbox",
     "state",
-    "progress"
+    "progress",
+    "item"
   ],
   "version": "2.2.13"
 }

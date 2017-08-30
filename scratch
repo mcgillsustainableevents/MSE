@@ -45,3 +45,301 @@
 @activeHoverBackgroundImage: none;
 @activeHoverColor: @activeColor;
 @activeHoverBoxShadow: @activeBoxShadow;
+
+
+const actionsFinal = [
+  Action({
+    title: 'Work with socially responsible sponsors',
+    info: '',
+    time: 'HIGH',
+    priority: 0,
+    category: 'Planning Phase',
+    points: 1
+  }),
+  Action({
+    title: 'Integrate diversity into your recruitment strategy',
+    info: '',
+    applicable: true,
+    time: 'MED',
+    priority: 0,
+    category: 'Planning Phase',
+    points: 1
+  }),
+  Action({
+    title: 'Purchase carbon offsets/onsets',
+    info: '',
+    applicable: true,
+    time: 'LOW',
+    priority: 0,
+    category: 'Planning Phase',
+    points: 2
+  }),
+  Action({
+    title: 'Publicize event accessibility accommodations',
+    info: '',
+    applicable: true,
+    time: 'LOW',
+    priority: 0,
+    category: 'Planning Phase',
+    points: 1
+  }),
+  Action({
+    title: 'Hold your event at an accessible time',
+    info: '',
+    applicable: true,
+    time: 'LOW',
+    priority: 0,
+    category: 'Planning Phase',
+    points: 1
+  }),
+  Action({
+    title: 'Offer a flexible and accesible pricing model',
+    info: '',
+    time: 'LOW',
+    priority: 0,
+    points: 1,
+    category: 'Planning Phase'
+  }),
+  Action({
+    title: 'Implement universal design principles',
+    info: '',
+    applicable: true,
+    time: 'HIGH',
+    priority: 0,
+    points: 1,
+    category: 'Planning Phase'
+  }),
+  Action({
+    title: 'Engage a team to implement sustainability related titles',
+    info: '',
+    applicable: true,
+    time: 'HIGH',
+    priority: 0,
+    points: 1,
+    category: 'Planning Phase'
+  }),
+  Action({
+    title: 'Ensure implemenation of fair labour practices',
+    info: '',
+    applicable: true,
+    time: 'LOW',
+    priority: 0,
+    bonus: 1,
+    category: 'Planning Phase'
+  }),
+  Action({
+    title: 'Create a sustainability vision for the event',
+    info: '',
+    time: 'LOW',
+    priority: 0,
+    bonus: 1,
+    category: 'Planning Phase'
+  }),
+  Action({
+    title: 'Ensure that event location is barrier free',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Ensure that your event location is easily accessible via public transportation.',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Hold your event in a sustainably-designed building',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title:
+      'Provide and collect information about alternative and accessible transport for participants',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Record your event or provide an event recap',
+    info: '',
+
+    applicable: true,
+    time: 'HIGH',
+    priority: 0
+  }),
+  Action({
+    title: 'Allow participation via teleconference',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Perform a land acknowledgement',
+    info: '',
+
+    applicable: true,
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Include voices of diverse populations in your event programming',
+    info: '',
+
+    applicable: true,
+    time: 'HIGH',
+    priority: 0
+  }),
+  Action({
+    title: 'Set community ground-rules, and provide an opportunity to share preferred pronouns',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Encourage attendence among diverse and underrepresented populations',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Offer access to gender-neutral (single stall), and parent-friendly washrooms on site',
+    info: '',
+
+    applicable: true,
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Educate presenters/facilitators on intertitle with diverse populations',
+    info: '',
+
+    time: 'HIGH',
+    priority: 0
+  }),
+  Action({
+    title: 'Work with locally based suppliers and services',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title:
+      'Ensure that suppliers are committed to sustainability and compliant with McGill’s Supplier Code of Conduct',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Choose event suppliers that are social economy initiatives',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Provide vegetarian/vegan food and beverage options.',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Provide reusable/recyclable dishware rather than disposable ones.',
+    info: '',
+
+    time: 'HIGH',
+    priority: 0
+  }),
+  Action({
+    title:
+      'Ask about, accomodate, and communicate dietary restrictions. If alcohol is served, offer non-alcoholic alternatives.',
+    info: '',
+
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Reduce food packaging waste',
+    info: '',
+
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Provide organic and/or fair-trade food and beverage options.',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Make provisions for the potential of surplus food',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Provide waste management facilities during your event, and communicate about them.',
+    info: '',
+
+    applicable: true,
+    time: 'HIGH',
+    priority: 0
+  }),
+  Action({
+    title: 'Engage waste educators at event',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0
+  }),
+  Action({
+    title: 'Adhere to McGill Paper Policy standards',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Reduce distributed event material waste',
+    info: '',
+
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Publicize information related to the sustainability of your event',
+    info: '',
+
+    applicable: true,
+    time: 'LOW',
+    priority: 0
+  }),
+  Action({
+    title: 'Collect participant and stakeholder feedback',
+    info: '',
+
+    applicable: true,
+    time: 'MED',
+    priority: 0,
+    category: 'Planning Phase'
+  })
+];

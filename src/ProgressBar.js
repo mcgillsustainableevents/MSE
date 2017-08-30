@@ -2,18 +2,22 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Progress } from 'semantic-ui-react';
 import Responsive from 'react-responsive';
+import { withRouter } from 'react-router';
 
-const ProgressBar = ({ value, total }) =>
+const ProgressBar = ({ value }) => (
   <Responsive maxDeviceWidth={480}>
-    {matches =>
-      <Progress style={{marginTop: '20px'}} size={matches ? 'small' : 'medium'} value={value} total={total} color="blue">
-        <span style={{ color: 'white' }}>{`Question ${value}/${total}`}</span>
-      </Progress>}
-  </Responsive>;
+    {matches => (
+      <Progress
+        style={{ marginTop: '20px' }}
+        size={matches ? 'small' : 'medium'}
+        value={value}
+        total={12}
+        color="blue"
+      >
+        <span style={{ color: 'white' }}>{`Question ${value}/12`}</span>
+      </Progress>
+    )}
+  </Responsive>
+);
 
-const mapStateToProps = state => ({
-  value: state.currentView + 1,
-  total: state.totalQuestions
-});
-
-export default connect(mapStateToProps)(ProgressBar);
+export default ProgressBar;

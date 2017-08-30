@@ -1,40 +1,16 @@
-const reducer = (state = [], action) => {
+import { Map } from 'immutable';
+
+const reducer = (state, action) => {
   switch (action.type) {
-    case 'ENABLE_ACTION':
-      return {
-        ...state,
-        actions: {
-          ...state.actions,
-          [action.id]: { ...state.actions[action.id], applicable: true }
-        }
-      };
-    case 'LOWER_PRIORITY':
-      return {
-        ...state,
-        actions: {
-          ...state.actions,
-          [action.id]: { ...state.actions[action.id], priority: 1 }
-        }
-      };
-    case 'NEXT_VIEW':
-      return { ...state, currentView: state.currentView + 1 };
-    case 'SWITCH_ACTION':
-      return {
-        ...state,
-        actions: {
-          ...state.actions,
-          [action.id]: {
-            ...state.actions[action.id],
-            checked: !state.actions[action.id].checked
-          }
-        }
-      };
-    case 'SET_KV':
-      return { ...state, data: { ...state.data, [action.key]: action.value } };
-    case 'RESET_QUESTIONS':
-      return {
-        ...state, currentView: 0
+    case 'VIEW_ACTION':
+      if (state.get('selectedAction') === action.id) {
+        return state.set('selectedAction', null);
       }
+      return state.set('selectedAction', action.id);
+    case 'CHECK_ACTION':
+      return state.updateIn(['actions', action.id, 'checked'], value => !value);
+    case 'SET_KV':
+      return state.setIn(['data', action.key], action.value);
     default:
       return state;
   }

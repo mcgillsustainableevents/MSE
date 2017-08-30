@@ -1,0 +1,28 @@
+.landing-info {
+  margin-top: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+.landing-header {
+  color: white;
+}
+
+.landing {
+  color: white;
+  font-weight: 300;
+}
+
+.landing-link {
+  color: white;
+  font-weight: 400;
+}
+.landing-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.landing-image-caption {
+  font-weight: 400;
+  margin-right: 5px;
+}

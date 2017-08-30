@@ -6,37 +6,17 @@ import ProgressBar from './ProgressBar';
 import Centered from './Centered';
 import QuestionHeader from './QuestionHeader';
 import Responsive from 'react-responsive';
+import { withRouter } from 'react-router';
 
-const Buttons = props => {
-  const formatButton = (button, i) => {
-    return (
-      <Responsive maxDeviceWidth={480} key={i}>
-        {matches => {
-          return (
-            <Grid.Column>
-              <Button
-                fluid
-                size={matches ? 'medium' : 'huge'}
-                onClick={() => {
-                  props.setKV(button.kv[0], button.kv[1]);
-                  props.enableActions(button.enable);
-                }}
-              >
-                {button.text}
-              </Button>
-            </Grid.Column>
-          );
-        }}
-      </Responsive>
-    );
-  };
-  return (
-    <Grid columns={props.buttons.length}>
-      {props.buttons.map(formatButton)}
-    </Grid>
-  );
-};
-
+const Buttons = props =>
+  <div style={{display: 'flex'}}>
+    <Button fluid size={'huge'} onClick={() => props.history.replace(props.to)}>
+      Yes
+    </Button>
+    <Button fluid size={'huge'} onClick={() => props.history.replace(props.to)}>
+      No
+    </Button>
+  </div>;
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -48,4 +28,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(Buttons);
+export default withRouter(connect(null, mapDispatchToProps)(Buttons));

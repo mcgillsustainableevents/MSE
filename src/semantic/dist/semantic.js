@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.2.10
+ * # Semantic UI - 2.2.13
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Semantic UI 2.2.10 - Site
+ * # Semantic UI 2.2.13 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -497,7 +497,7 @@ $.extend($.expr[ ":" ], {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.2.10 - Checkbox
+ * # Semantic UI 2.2.13 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -1329,7 +1329,7 @@ $.fn.checkbox.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.2.10 - State
+ * # Semantic UI 2.2.13 - State
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -2038,7 +2038,7 @@ $.fn.state.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.2.10 - Progress
+ * # Semantic UI 2.2.13 - Progress
  * http://github.com/semantic-org/semantic-ui/
  *
  *
