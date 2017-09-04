@@ -18,8 +18,9 @@ import CalculatorCategory from './CalculatorCategory';
 import logo from './mse_logo.svg';
 import './Calculator.css';
 import { Link } from 'react-router-dom';
+import Points from './Points';
 
-const Calculator = () => (
+const Calculator = ({pointsNumerator, pointsDenominator}) => (
   <div className="calculator">
     <Image width={500} className="logo" src={logo} />
     <p className="calculator-copy">
@@ -30,14 +31,11 @@ const Calculator = () => (
     </p>
     <CalculatorCategory category="Planning Phase" />
     <CalculatorCategory category="Equity" />
-    <Link to="/submit"><Button fluid>Next</Button></Link>
+    <Points />
+    <Link to="/submit">
+      <Button fluid>Next</Button>
+    </Link>
   </div>
 );
 
-const mapStateToProps = state => {
-  return {};
-};
-
-const mapDispatchToProps = dispatch => {};
-
-export default connect(mapStateToProps, null)(Calculator);
+export default Calculator;
