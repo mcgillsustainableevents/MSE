@@ -19,16 +19,10 @@ import { withRouter } from 'react-router';
 import './Category.css';
 import Lorem from './Lorem';
 import Action from './Action';
-import { actionsSelector } from './selectors'
+import { actionsSelector } from './selectors';
+import Category from './Category';
 
-const Category = ({ category, actions }) => (
-  <div className="category">
-    <h1 className="category-header">{category}</h1>
-    <Segment.Group>
-      {actions.map(action => <Action key={action.id} action={action} />)}
-    </Segment.Group>
-  </div>
-);
+const CalculatorCategory = props => <Category {...props} />;
 
 const mapStateToProps = (state, { category }) => ({
   actions: actionsSelector(state).filter(
@@ -36,4 +30,4 @@ const mapStateToProps = (state, { category }) => ({
   )
 });
 
-export default connect(mapStateToProps)(Category);
+export default connect(mapStateToProps)(CalculatorCategory);

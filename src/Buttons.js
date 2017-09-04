@@ -7,16 +7,18 @@ import Centered from './Centered';
 import QuestionHeader from './QuestionHeader';
 import Responsive from 'react-responsive';
 import { withRouter } from 'react-router';
+import './Buttons.css';
 
-const Buttons = props =>
-  <div style={{display: 'flex'}}>
-    <Button fluid size={'huge'} onClick={() => props.history.replace(props.to)}>
+const Buttons = props => (
+  <div className="buttons">
+    <Button fluid size="huge" onClick={() => props.history.replace(props.to)}>
       Yes
     </Button>
-    <Button fluid size={'huge'} onClick={() => props.history.replace(props.to)}>
+    <Button fluid size="huge" onClick={() => props.history.replace(props.to)}>
       No
     </Button>
-  </div>;
+  </div>
+);
 
 const mapDispatchToProps = dispatch => {
   return {

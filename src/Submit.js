@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { nextView } from './actions.js';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 
 const Submit = props => {
   const handleClick = () => {
@@ -19,6 +20,7 @@ const Submit = props => {
   };
   return (
     <Centered>
+      <ScrollToTop />
       <Container text style={{ color: 'white', fontWeight: 300 }}>
         <Header
           textAlign="center"

@@ -11,7 +11,7 @@ const Action = Record({
   points: 0,
   bonus: 0,
   category: null,
-  onlyLearn: false
+  learn: false
 }, 'Action')
 
 
@@ -35,6 +35,17 @@ const actions = OrderedMap({
     applicable: false,
     points: 1
   }),
+  3: Action({
+    id: '3',
+    title: 'Blah blah blah',
+    info: '',
+    time: 'MED',
+    priority: 'MED',
+    category: 'Planning Phase',
+    applicable: false,
+    points: 1,
+    learn: true
+  }),
   2: Action({
     id: '2',
     title: 'Perform a land acknowledgement',
@@ -49,6 +60,7 @@ const actions = OrderedMap({
 const initialState = Map({
   actions,
   selectedAction: null,
+  selectedLearnAction: null,
   data: Map()
 });
 

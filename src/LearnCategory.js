@@ -18,22 +18,21 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import './Category.css';
 import Lorem from './Lorem';
-import Action from './Action';
-import { actionsSelector } from './selectors'
+import LearnAction from './LearnAction';
+import { actionsSelector } from './selectors';
+import Category from './Category';
 
-const Category = ({ category, actions }) => (
+const LearnCategory = ({category, actions}) => (
   <div className="category">
     <h1 className="category-header">{category}</h1>
     <Segment.Group>
-      {actions.map(action => <Action key={action.id} action={action} />)}
+      {actions.map(action => <LearnAction key={action.id} action={action} />)}
     </Segment.Group>
   </div>
 );
 
 const mapStateToProps = (state, { category }) => ({
-  actions: actionsSelector(state).filter(
-    action => action.category === category && action.learn === false
-  )
+  actions: actionsSelector(state).filter(action => action.category === category)
 });
 
-export default connect(mapStateToProps)(Category);
+export default connect(mapStateToProps)(LearnCategory);

@@ -76,22 +76,16 @@ const Landing = () => (
       </Item.Group>
       <Grid stackable>
         <Grid.Column width={8}>
-          <Link to={{ pathname: '/questions/1', state: { question: 0 } }}>
-            <button
-              className="ui massive button fluid large"
-              style={{ backgroundColor: 'white', color: '#2185D0' }}
-            >
-              Get certified
-            </button>
+          <Link to={{ pathname: '/questions/1' }}>
+            <Button fluid size="massive">Get certified</Button>
           </Link>
         </Grid.Column>
         <Grid.Column width={8}>
-          <button
-            className="ui massive button fluid large"
-            style={{ backgroundColor: 'white', color: '#2185D0' }}
-          >
-            Learn
-          </button>
+          <Link to={{ pathname: '/learn' }}>
+            <Button fluid size="massive">
+              Learn
+            </Button>
+          </Link>
         </Grid.Column>
         <Grid.Column width={16} textAlign="center">
           <span className="landing-image-caption">Funded by</span>

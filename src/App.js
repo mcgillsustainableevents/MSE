@@ -11,6 +11,7 @@ import { Route, Switch, MemoryRouter, Redirect } from 'react-router-dom';
 import Landing from './Landing';
 import { withRouter } from 'react-router';
 import Calculator from './Calculator';
+import Learn from './Learn';
 
 const App = () =>
   <div>
@@ -126,6 +127,8 @@ const App = () =>
     <Route path="/calculator" component={Calculator} />
     <Route path="/submit" component={Submit} />
     <Route path="/complete" component={Complete} />
+    <Route path="/learn" component={Learn} />
+
   </div>;
 
 export default App;
