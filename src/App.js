@@ -12,9 +12,10 @@ import Landing from './Landing';
 import { withRouter } from 'react-router';
 import Calculator from './Calculator';
 import Learn from './Learn';
+import './App.css'
 
 const App = () =>
-  <div>
+  <div className="app">
     <Route exact path="/" component={Landing} />
     <Route
       path="/questions/1"
@@ -128,7 +129,6 @@ const App = () =>
     <Route path="/submit" component={Submit} />
     <Route path="/complete" component={Complete} />
     <Route path="/learn" component={Learn} />
-
   </div>;
 
 export default App;

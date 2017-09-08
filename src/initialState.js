@@ -54,6 +54,16 @@ const actions = OrderedMap({
     priority: 'MED',
     category: 'Equity',
     points: 1
+  }),
+  5: Action({
+    id: '5',
+    title: 'Perform a land acknowledgement',
+    info: '',
+    time: 'LOW',
+    priority: 'MED',
+    category: 'Equity',
+    applicable: false,
+    points: 1
   })
 });
 
@@ -61,7 +71,8 @@ const initialState = Map({
   actions,
   selectedAction: null,
   selectedLearnAction: null,
-  data: Map()
+  data: Map(),
+  inapplicableAction: null
 });
 
 export default initialState;

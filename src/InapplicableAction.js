@@ -20,20 +20,11 @@ import './Action.css';
 import TimeLabel from './TimeLabel';
 import Lorem from './Lorem';
 
-const Action = ({ action, active, handleSegmentClick, handleActionCheck }) => (
-  <Segment onClick={() => handleSegmentClick(action.id)}>
+const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCheck }) => (
+  <Segment onClick={e => {e.stopPropagation(); handleSegmentClick(action.id)}}>
     <div className="action-title">
-      {
-        <Checkbox
-          onClick={e => {
-            e.stopPropagation();
-            handleActionCheck(action.id);
-          }}
-          checked={action.checked}
-        />
-      }
       <div className="title">
-        <TimeLabel time={action.time} />
+        <Label horizontal>N/A</Label>
         {action.title}
       </div>
     </div>
@@ -55,4 +46,4 @@ const mapStateToProps = (state, { action }) => {
 
 const mapDispatchToProps = { handleSegmentClick: viewAction, handleActionCheck: checkAction };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Action);
+export default connect(mapStateToProps, mapDispatchToProps)(InapplicableAction);

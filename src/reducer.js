@@ -11,6 +11,11 @@ const reducer = (state, action) => {
       return state.updateIn(['actions', action.id, 'checked'], value => !value);
     case 'SET_KV':
       return state.setIn(['data', action.key], action.value);
+    case 'VIEW_INAPPLICABLE_ACTIONS':
+    if (state.get('inapplicableAction') === action.category) {
+      return state.set('inapplicableAction', null);
+    }
+    return state.set('inapplicableAction', action.category);
     default:
       return state;
   }
