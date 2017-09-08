@@ -1,0 +1,27 @@
+.submit {
+  color: white;
+}
+
+.submit>.header {
+  font-size: 4rem !important;
+  color: white !important;
+}
+
+.submit>strong {
+  text-align: center !important;
+}
+
+.submit>.sub-header {
+  font-weight: 400;
+  text-align: center;
+}
+
+.submit .item-text {
+  font-weight: 300;
+  text-align: justify;
+}
+
+.submit>.email {
+  font-weight: 300;
+  text-align: center;
+}

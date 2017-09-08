@@ -1,0 +1,16 @@
+.complete {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.complete>.header {
+  color: white !important;
+  font-size: 4rem !important;
+}
+
+@media (max-width: 480px) {
+  .complete>.header {
+    font-size: 3rem !important;
+  }
+}

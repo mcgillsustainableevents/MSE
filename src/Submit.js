@@ -6,21 +6,9 @@ import { nextView } from './actions.js';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
+import './Submit.css';
 
 const Submit = props => {
-  const encode = data =>
-    data
-      .entrySeq()
-      .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-      .join('&');
-
-  const handleSubmit = () => {
-    const request = new XMLHttpRequest();
-    request.open('POST', '/', true);
-    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    request.send(encode(props.data));
-  };
-
   const handleClick = () => {
     var request = new XMLHttpRequest();
     request.open(
@@ -34,42 +22,45 @@ const Submit = props => {
   return (
     <Centered>
       <ScrollToTop />
-      <Container text style={{ color: 'white', fontWeight: 300 }}>
-        <Header
-          textAlign="center"
-          style={{ color: 'white', fontSize: '4rem' }}
-        >{`Let's do it!`}</Header>
-        <p style={{ textAlign: 'center' }}>
-          We’re excited to get your event certified – Here are our next steps:
-        </p>
-        <List ordered relaxed style={{ color: 'white' }}>
+      <Container text className="submit">
+        <Header textAlign="center">{`Let's do it!`}</Header>
+        <div className="sub-header">
+          We’re excited to get your event certified – Here are our next steps
+        </div>
+        <List ordered relaxed>
           <List.Item>
-            {`One of our consultants will be in touch shortly (via the email
+            <div className="item-text">
+              {`One of our consultants will be in touch shortly (via the email
                   address you provided), and will support your event planning team
                   through the implementation of your chosen actions. Keep in mind that
                   your team can implement more or fewer actions than what you've just
                   selected.`}
+            </div>
           </List.Item>
           <List.Item>
-            {`A certification meeting will be arranged to confirm the implementation of your actions.`}
+            <div className="item-text">
+              {`A certification meeting will be arranged to confirm the implementation of your actions.`}
+            </div>
           </List.Item>
           <List.Item>
-            {`Your certification can be awarded! We will provide relevant publicity material and share your achievement through our channels. `}
+            <div className="item-text">
+              {`Your certification can be awarded! We will provide relevant publicity material and share your achievement through our channels. `}
+            </div>
           </List.Item>
         </List>
         <Divider hidden fitted />
         <Link to="/complete">
-          <Button onClick={handleSubmit} fluid size="large">
+          <Button onClick={handleClick} fluid size="large">
             Send to MSE
           </Button>
         </Link>
         <br />
-        <p style={{ textAlign: 'center' }}>
+        <div className="email">
           If you have any questions, comments, or concerns, please contact us at any time at{' '}
           <a className="landing-link" href="mailto:events.sustainability@mcgill.ca">
             events.sustainability@mcgill.ca
           </a>
-        </p>
+        </div>
       </Container>
     </Centered>
   );

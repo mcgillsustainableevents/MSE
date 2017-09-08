@@ -20,18 +20,10 @@ import './Action.css';
 import TimeLabel from './TimeLabel';
 import Lorem from './Lorem';
 
-const Action = ({ action, active, handleSegmentClick, handleActionCheck }) => (
-  <Segment onClick={() => handleSegmentClick(action.id)}>
+const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
+  <Segment onClick={handleActionClick}>
     <div className="action-title">
-      {
-        <Checkbox
-          onClick={e => {
-            e.stopPropagation();
-            handleActionCheck(action.id);
-          }}
-          checked={action.checked}
-        />
-      }
+      <Checkbox onClick={handleActionCheck} checked={action.checked} />
       <TimeLabel time={action.time} />
       <div className="title">{action.title}</div>
     </div>
@@ -51,6 +43,12 @@ const mapStateToProps = (state, { action }) => {
   };
 };
 
-const mapDispatchToProps = { handleSegmentClick: viewAction, handleActionCheck: checkAction };
+const mapDispatchToProps = (dispatch, { action }) => ({
+  handleActionClick: () => dispatch(viewAction(action.id)),
+  handleActionCheck: e => {
+    e.stopPropagation();
+    dispatch(checkAction(action.id));
+  }
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Action);
