@@ -77,7 +77,7 @@ const App = () =>
         <Question
           number={7}
           question="Will you be serving food or beverages?"
-          controls={<Buttons to="/questions/8" />}
+          controls={<Buttons valueKey="Food" enable={[]} to="/questions/8" />}
         />}
     />
     <Route
@@ -86,7 +86,7 @@ const App = () =>
         <Question
           number={8}
           question="Is your event sponsored?"
-          controls={<Buttons to="/questions/9" />}
+          controls={<Buttons valueKey="Sponsored" enable={[]} to="/questions/9" />}
         />}
     />
     <Route
@@ -95,7 +95,7 @@ const App = () =>
         <Question
           number={9}
           question="Will you be buying any supplies?"
-          controls={<Buttons to="/questions/10" />}
+          controls={<Buttons valueKey="Supplies" enable={[]} to="/questions/10" />}
         />}
     />
     <Route
@@ -104,7 +104,7 @@ const App = () =>
         <Question
           number={10}
           question="Will you be printing, creating or purchasing materials for distribution or promotion?"
-          controls={<Buttons to="/questions/11" />}
+          controls={<Buttons valueKey="Materials" enable={[]} to="/questions/11" />}
         />}
     />
     <Route
@@ -113,7 +113,7 @@ const App = () =>
         <Question
           number={11}
           question="Are you charging for entrance to your event?"
-          controls={<Buttons to="/questions/12" />}
+          controls={<Buttons valueKey="Charging" enable={[]} to="/questions/12" />}
         />}
     />
     <Route
@@ -122,7 +122,7 @@ const App = () =>
         <Question
           number={12}
           question="Does your event include small-group discussions?"
-          controls={<Buttons to="/calculator" />}
+          controls={<Buttons valueKey="Discussions" enable={[]} to="/calculator" />}
         />}
     />
     <Route path="/calculator" component={Calculator} />

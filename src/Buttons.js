@@ -9,24 +9,28 @@ import Responsive from 'react-responsive';
 import { withRouter } from 'react-router';
 import './Buttons.css';
 
-const Buttons = props => (
+const Buttons = ({ onYesClick, onNoClick }) => (
   <div className="buttons">
-    <Button fluid size="huge" onClick={() => props.history.replace(props.to)}>
+    <Button fluid size="huge" onClick={onYesClick}>
       Yes
     </Button>
-    <Button fluid size="huge" onClick={() => props.history.replace(props.to)}>
+    <Button fluid size="huge" onClick={onNoClick}>
       No
     </Button>
   </div>
 );
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, { history, enable, to, valueKey }) => {
   return {
-    enableActions: ids => {
-      ids.map(id => dispatch(enableAction(id)));
-      dispatch(nextView());
+    onYesClick: () => {
+      enable.map(id => dispatch(enableAction(id)));
+      dispatch(setKV(valueKey, true));
+      history.replace(to);
     },
-    setKV: (key, value) => dispatch(setKV(key, value))
+    onNoClick: () => {
+      dispatch(setKV(valueKey, false));
+      history.replace(to);
+    }
   };
 };
 

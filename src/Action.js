@@ -32,10 +32,8 @@ const Action = ({ action, active, handleSegmentClick, handleActionCheck }) => (
           checked={action.checked}
         />
       }
-      <div className="title">
-        <TimeLabel time={action.time} />
-        {action.title}
-      </div>
+      <TimeLabel time={action.time} />
+      <div className="title">{action.title}</div>
     </div>
     {active && (
       <div onClick={e => e.stopPropagation()}>

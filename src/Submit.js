@@ -8,6 +8,20 @@ import { Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 const Submit = props => {
+  const encode = data =>
+    data
+      .entrySeq()
+      .map((value, key) => encodeURIComponent(key) + '=' + encodeURIComponent(value))
+      .join('&');
+
+  const handleSubmit = () => {
+    console.log(props);
+    const request = new XMLHttpRequest();
+    request.open('POST', '/', true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    request.send(encode(props.data));
+  };
+
   const handleClick = () => {
     var request = new XMLHttpRequest();
     request.open(
@@ -46,7 +60,7 @@ const Submit = props => {
         </List>
         <Divider hidden fitted />
         <Link to="/complete">
-          <Button onClick={handleClick} fluid size="large">
+          <Button onClick={handleSubmit} fluid size="large">
             Send to MSE
           </Button>
         </Link>
@@ -64,7 +78,7 @@ const Submit = props => {
 
 const mapStateToProps = state => {
   return {
-    data: state.data
+    data: state.get('data')
   };
 };
 

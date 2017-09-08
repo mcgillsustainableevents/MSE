@@ -1,19 +1,21 @@
 import { OrderedMap, Record, Map } from 'immutable';
 
-const Action = Record({
-  id: null,
-  title: null,
-  info: null,
-  checked: false,
-  applicable: true,
-  time: null,
-  priority: null,
-  points: 0,
-  bonus: 0,
-  category: null,
-  learn: false
-}, 'Action')
-
+const Action = Record(
+  {
+    id: null,
+    title: null,
+    info: null,
+    checked: false,
+    applicable: true,
+    time: null,
+    priority: null,
+    points: 0,
+    bonus: 0,
+    category: null,
+    learn: false
+  },
+  'Action'
+);
 
 const actions = OrderedMap({
   0: Action({
@@ -71,7 +73,7 @@ const initialState = Map({
   actions,
   selectedAction: null,
   selectedLearnAction: null,
-  data: Map(),
+  data: Map({ ['form-name']: 'mse' }),
   inapplicableAction: null
 });
 
