@@ -11,11 +11,10 @@ const Submit = props => {
   const encode = data =>
     data
       .entrySeq()
-      .map((value, key) => encodeURIComponent(key) + '=' + encodeURIComponent(value))
+      .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
       .join('&');
 
   const handleSubmit = () => {
-    console.log(props);
     const request = new XMLHttpRequest();
     request.open('POST', '/', true);
     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
