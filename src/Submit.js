@@ -13,7 +13,7 @@ const Submit = props => {
     var request = new XMLHttpRequest();
     request.open(
       'POST',
-      'https://0hsnlpfu9j.execute-api.us-west-2.amazonaws.com/prod/McGill',
+      'https://us-central1-mcgill-168819.cloudfunctions.net/Sheets',
       true
     );
     request.setRequestHeader('Content-Type', 'application/json');
