@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setKV, nextView } from './actions.js';
+import { setKV } from './actions.js';
 import { Input } from 'semantic-ui-react';
 import Responsive from 'react-responsive';
-import { Link } from 'react-router';
 import { withRouter } from 'react-router';
 
 class TextInput extends React.Component {

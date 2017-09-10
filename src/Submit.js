@@ -1,21 +1,21 @@
 import React from 'react';
 import { Button, Container, Divider, Header, List } from 'semantic-ui-react';
-import 'whatwg-fetch';
 import { connect } from 'react-redux';
-import { nextView } from './actions.js';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 import './Submit.css';
+import {
+  checkedSelector,
+  dataSelector,
+  pointsNumeratorSelector,
+  pointsDenominatorSelector
+} from './selectors';
 
 const Submit = props => {
   const handleClick = () => {
-    var request = new XMLHttpRequest();
-    request.open(
-      'POST',
-      'https://us-central1-mcgill-168819.cloudfunctions.net/Sheets',
-      true
-    );
+    const request = new XMLHttpRequest();
+    request.open('POST', 'https://us-central1-mcgill-168819.cloudfunctions.net/Sheets', true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify(props.data));
   };
@@ -66,10 +66,10 @@ const Submit = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    data: state.get('data')
-  };
-};
+const mapStateToProps = state => ({
+  data: dataSelector(state)
+    .set('checked', checkedSelector(state).join(', '))
+    .set('score', `${pointsNumeratorSelector(state)}/${pointsDenominatorSelector(state)}`)
+});
 
 export default connect(mapStateToProps)(Submit);

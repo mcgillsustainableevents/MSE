@@ -73,7 +73,7 @@ const initialState = Map({
   actions,
   selectedAction: null,
   selectedLearnAction: null,
-  data: Map({ ['form-name']: 'mse' }),
+  data: Map(),
   inapplicableAction: null
 });
 

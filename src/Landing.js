@@ -1,19 +1,11 @@
 import React from 'react';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { switchAction, nextView, setKV } from './actions.js';
 import {
   Button,
   Image,
-  Statistic,
   Header,
   Container,
-  Divider,
-  Segment,
-  Label,
-  Checkbox,
-  List,
   Grid,
   Item
 } from 'semantic-ui-react';

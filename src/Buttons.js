@@ -1,11 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { enableAction, nextView, setKV } from './actions.js';
-import { Grid, Button } from 'semantic-ui-react';
-import ProgressBar from './ProgressBar';
-import Centered from './Centered';
-import QuestionHeader from './QuestionHeader';
-import Responsive from 'react-responsive';
+import { enableAction, setKV } from './actions.js';
+import { Button } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 import './Buttons.css';
 

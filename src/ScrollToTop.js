@@ -6,7 +6,7 @@ class ScrollToTop extends Component {
   }
 
   render() {
-    return null;
+    return <div />;
   }
 }
 

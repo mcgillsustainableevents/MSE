@@ -1,26 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { switchAction, nextView, setKV } from './actions.js';
-import {
-  Button,
-  Image,
-  Statistic,
-  Header,
-  Container,
-  Divider,
-  Segment,
-  Label,
-  Checkbox,
-  List,
-  Grid
-} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router';
+import { Segment } from 'semantic-ui-react';
 import './Category.css';
-import Lorem from './Lorem';
 import Action from './Action';
 import { actionsSelector } from './selectors';
-import InapplicableAction from './InapplicableAction';
 import InapplicableActions from './InapplicableActions';
 
 const Category = ({ category, actions, inapplicableActions }) => (
@@ -38,7 +21,7 @@ const mapStateToProps = (state, { category }) => ({
     action => action.category === category && action.learn === false && action.applicable
   ),
   inapplicableActions: actionsSelector(state).filter(
-    action => action.category === category && action.learn === false && action.applicable == false
+    action => action.category === category && action.learn === false && action.applicable === false
   )
 });
 

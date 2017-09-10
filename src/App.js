@@ -1,15 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Buttons from './Buttons.js';
 import TextInput from './TextInput.js';
-import DateInput from './DateInput.js';
-import AmountInput from './AmountInput.js';
 import Submit from './Submit.js';
 import Complete from './Complete.js';
 import Question from './Question';
-import { Route, Switch, MemoryRouter, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Landing from './Landing';
-import { withRouter } from 'react-router';
 import Calculator from './Calculator';
 import Learn from './Learn';
 import './App.css'

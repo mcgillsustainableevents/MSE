@@ -1,5 +1,3 @@
-import { Map } from 'immutable';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'VIEW_ACTION':

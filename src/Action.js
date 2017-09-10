@@ -1,24 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { checkAction, nextView, setKV, viewAction } from './actions.js';
+import { checkAction, viewAction } from './actions.js';
 import {
-  Button,
-  Image,
-  Statistic,
-  Header,
-  Container,
   Divider,
   Segment,
-  Label,
-  Checkbox,
-  List,
-  Grid,
-  Icon
+  Checkbox
 } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import './Action.css';
 import TimeLabel from './TimeLabel';
 import Lorem from './Lorem';
+import './Action.css';
 
 const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
   <Segment onClick={handleActionClick}>

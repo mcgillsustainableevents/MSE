@@ -1,8 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Progress } from 'semantic-ui-react';
 import Responsive from 'react-responsive';
-import { withRouter } from 'react-router';
 
 const ProgressBar = ({ value }) => (
   <Responsive maxDeviceWidth={480}>

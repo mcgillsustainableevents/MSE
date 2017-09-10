@@ -1,24 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { switchAction, nextView, setKV } from './actions.js';
-import {
-  Button,
-  Image,
-  Statistic,
-  Header,
-  Container,
-  Divider,
-  Segment,
-  Label,
-  Checkbox,
-  List,
-  Grid
-} from 'semantic-ui-react';
-import Category from './Category';
+import { Image } from 'semantic-ui-react';
 import logo from './mse_logo.svg';
-import './Calculator.css';
-import { Link } from 'react-router-dom';
 import LearnCategory from './LearnCategory';
+import './Calculator.css';
 
 const Calculator = () => (
   <div className="calculator">
@@ -31,10 +15,4 @@ const Calculator = () => (
   </div>
 );
 
-const mapStateToProps = state => {
-  return {};
-};
-
-const mapDispatchToProps = dispatch => {};
-
-export default connect(mapStateToProps, null)(Calculator);
+export default Calculator;

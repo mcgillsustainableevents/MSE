@@ -1,21 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { checkAction, nextView, setKV, viewAction } from './actions.js';
+import { viewAction } from './actions.js';
 import {
-  Button,
-  Image,
-  Statistic,
-  Header,
-  Container,
   Divider,
   Segment,
-  Label,
-  Checkbox,
-  List,
-  Grid,
-  Icon
 } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import './Action.css';
 import Lorem from './Lorem';
 

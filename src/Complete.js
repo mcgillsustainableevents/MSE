@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Divider, Header } from 'semantic-ui-react';
+import { Container, Header } from 'semantic-ui-react';
 import Centered from './Centered';
 import './Complete.css'
 

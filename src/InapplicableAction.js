@@ -1,23 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { checkAction, nextView, setKV, viewAction } from './actions.js';
+import { checkAction, viewAction } from './actions.js';
 import {
-  Button,
-  Image,
-  Statistic,
-  Header,
-  Container,
   Divider,
   Segment,
-  Label,
-  Checkbox,
-  List,
-  Grid,
-  Icon
+  Label
 } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import './Action.css';
-import TimeLabel from './TimeLabel';
 import Lorem from './Lorem';
 
 const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCheck }) => (
