@@ -5,11 +5,11 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger'
 import reducer from './reducer.js'
 import initialState from './initialState.js'
+import './index.css';
+import './semantic/dist/semantic.min.css';
 import App from './App.js'
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom'
-
-import './semantic/dist/semantic.min.css';
 
 const store = createStore(reducer, initialState, applyMiddleware(logger))
 

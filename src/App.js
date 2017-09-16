@@ -8,7 +8,6 @@ import { Route } from 'react-router-dom';
 import Landing from './Landing';
 import Calculator from './Calculator';
 import Learn from './Learn';
-import './App.css'
 
 const App = () =>
   <div className="app">
