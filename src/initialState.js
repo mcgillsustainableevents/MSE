@@ -303,6 +303,16 @@ addAction(45, {
   category: 'Communication',
   learn: true
 });
+addAction(46, {
+  title: 'Encourage presenters and participants to contribute to making events sustainable',
+  category: 'Communication',
+  learn: true
+});
+addAction(47, {
+  title: 'Provide access to a quiet room for extremely long events',
+  category: 'Equity',
+  learn: true
+});
 
 const initialState = Map({
   actions,

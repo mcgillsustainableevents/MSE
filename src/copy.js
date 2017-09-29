@@ -139,4 +139,11 @@ copy[44] = `<p><strong>Why?</strong> In order to continually improve our events 
 copy[45] = `<p><strong>Why?</strong> Providing documentation and communications in as many languages as is appropriate for your event-attendees helps to make it more accessible for a wider audience.</p>
 <p><strong>How?</strong> There is a <a href="https://www.mcgill.ca/translation/home-page-2">McGill Translation Services Office</a> but they unfortunately cannot accommodate for every request. If you have a large document that needs translating, consider reaching out to them, or other external translation services in Montreal such as <a href="http://www.textualis.com">Textualis</a>. For shorter documentation, if somebody on your event-planning team is comfortable translating this is also a great alternative.</p>
 `;
+copy[46] = `<p><strong>Why?</strong> By encouraging event attendees and presenters to contribute to the sustainability of the event, you can help create a culture-shift amongst the McGill community.</p>
+<p><strong>How?</strong> When communicating the actions that you are taking to make your event more sustainable, you can include ways for event attendees to help. For example, when sending event documentation, include a disclaimer to encourage attendees not to print unnecessary materials.</p>
+`;
+copy[47] = `<p><strong>Why?</strong> For longer events (full-day events), especially those focused on sensitive topics, or with a lot of physical or mental stimulation, it is important to provide a space where attendees can take a break if they feel it&#39;s necessary for their physical or mental well being.</p>
+<p><strong>How?</strong> Simply provide a space away from the main event area, possibly near food, beverages and/or the washrooms. Ensure that the location of this space is communicated clearly at the beginning and throughout the event.</p>
+`;
+
 export default copy;
