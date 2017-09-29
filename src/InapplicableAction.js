@@ -7,7 +7,6 @@ import {
   Label
 } from 'semantic-ui-react';
 import './Action.css';
-import Lorem from './Lorem';
 
 const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCheck }) => (
   <Segment onClick={e => {e.stopPropagation(); handleSegmentClick(action.id)}}>
@@ -20,7 +19,7 @@ const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCh
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        {Lorem}
+        <div dangerouslySetInnerHTML={{__html: action.info}} />
       </div>
     )}
   </Segment>

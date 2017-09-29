@@ -7,7 +7,6 @@ import {
   Checkbox
 } from 'semantic-ui-react';
 import TimeLabel from './TimeLabel';
-import Lorem from './Lorem';
 import './Action.css';
 
 const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
@@ -20,7 +19,7 @@ const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        {Lorem}
+        <div dangerouslySetInnerHTML={{__html: action.info}} />
       </div>
     )}
   </Segment>

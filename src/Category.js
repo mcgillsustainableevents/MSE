@@ -10,7 +10,7 @@ const Category = ({ category, actions, inapplicableActions }) => (
   <div className="category">
     <h1 className="category-header">{category}</h1>
     <Segment.Group>
-      {actions.map(action => <Action key={action.id} action={action} />)}
+      {actions.valueSeq().map(action => <Action key={action.id} action={action} />)}
       <InapplicableActions category={category} />
     </Segment.Group>
   </div>

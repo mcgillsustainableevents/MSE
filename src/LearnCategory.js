@@ -9,7 +9,7 @@ const LearnCategory = ({ category, actions }) => (
   <div className="category">
     <h1 className="category-header">{category}</h1>
     <Segment.Group>
-      {actions.map(action => <LearnAction key={action.id} action={action} />)}
+      {actions.valueSeq().map(action => <LearnAction key={action.id} action={action} />)}
     </Segment.Group>
   </div>
 );

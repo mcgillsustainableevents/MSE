@@ -6,7 +6,6 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import './Action.css';
-import Lorem from './Lorem';
 
 const LearnAction = ({ action, active, handleSegmentClick }) => (
   <Segment onClick={() => handleSegmentClick(action.id)}>
@@ -16,7 +15,7 @@ const LearnAction = ({ action, active, handleSegmentClick }) => (
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        {Lorem}
+        <div dangerouslySetInnerHTML={{__html: action.info}} />
       </div>
     )}
   </Segment>
