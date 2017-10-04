@@ -35,7 +35,8 @@ addAction(1, {
   title: 'Work with socially responsible sponsors and partners',
   time: 'HIGH',
   category: 'Early Planning Phase',
-  points: 1
+  points: 1,
+  applicable: false
 });
 
 addAction(2, {
@@ -70,7 +71,8 @@ addAction(6, {
   title: 'Offer a flexible and accessible pricing model',
   time: 'LOW',
   category: 'Early Planning Phase',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(7, {
   title: 'Implement Universal Design principles',
@@ -154,7 +156,8 @@ addAction(20, {
     'Set community ground-rules, and provide an opportunity to share preferred pronouns and access needs',
   time: 'LOW',
   category: 'Equity',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(21, {
   title: 'Encourage attendance and engagement for traditionally marginalized participants',
@@ -178,7 +181,8 @@ addAction(24, {
   title: 'Educate presenters/facilitators on interaction with diverse communities',
   time: 'HIGH',
   category: 'Equity',
-  bonus: 1
+  bonus: 1,
+  applicable: false
 });
 addAction(25, {
   title: 'Integrate health breaks into long events',
@@ -189,20 +193,23 @@ addAction(26, {
   title: 'Work with locally based suppliers and services',
   time: 'LOW',
   category: 'Procurement',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(27, {
   title:
     'Ensure that suppliers are committed to sustainability and compliant with McGill’s Supplier Code of Conduct',
   time: 'LOW',
   category: 'Procurement',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(28, {
   title: 'Choose event suppliers that are social economy initiatives',
   time: 'MED',
   category: 'Procurement',
-  bonus: 1
+  bonus: 1,
+  applicable: false
 });
 addAction(29, {
   title: 'Any event paid by McGill operating funds must use a McGill-approved catering service.',
@@ -213,38 +220,44 @@ addAction(30, {
   title: 'Provide vegetarian/vegan food and beverage options',
   time: 'LOW',
   category: 'Food',
-  points: 2
+  points: 2,
+  applicable: false
 });
 addAction(31, {
   title:
     'Ask about, accommodate, and communicate dietary restrictions. If alcohol is served, offer non-alcoholic alternatives',
   time: 'MED',
   category: 'Food',
-  points: 2
+  points: 2,
+  applicable: false
 });
 addAction(32, {
   title: 'Provide reusable/recyclable dishware rather than disposable ones',
   time: 'HIGH',
   category: 'Food',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(33, {
   title: 'Reduce food packaging waste',
   time: 'MED',
   category: 'Food',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(34, {
   title: 'Provide fair-trade and/or organic food and beverage options',
   time: 'LOW',
   category: 'Food',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(35, {
   title: 'Make provisions for the potential of surplus food',
   time: 'LOW',
   category: 'Food',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(36, {
   title: 'Ensure your event’s food and beverage menu is nutritionally complete',
@@ -261,7 +274,8 @@ addAction(38, {
   title: 'Reduce distributed event material waste',
   time: 'LOW',
   category: 'Waste',
-  points: 2
+  points: 2,
+  applicable: false
 });
 addAction(39, {
   title: 'Engage waste educators at event',
@@ -273,7 +287,8 @@ addAction(40, {
   title: 'Adhere to McGill Paper Policy standards',
   time: 'LOW',
   category: 'Waste',
-  points: 1
+  points: 1,
+  applicable: false
 });
 addAction(41, {
   title: 'Publicize information related to the sustainability of event',

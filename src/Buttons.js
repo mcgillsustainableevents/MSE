@@ -19,7 +19,7 @@ const Buttons = ({ onYesClick, onNoClick }) => (
 const mapDispatchToProps = (dispatch, { history, enable, to, valueKey }) => {
   return {
     onYesClick: () => {
-      enable.map(id => dispatch(enableAction(id)));
+      enable.forEach(id => dispatch(enableAction(id)));
       dispatch(setKV(valueKey, true));
       history.replace(to);
     },

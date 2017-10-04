@@ -19,9 +19,9 @@ const InapplicableActions = ({
       {open && (
         <div className="inapplicable-actions">
           <Segment.Group>
-            {inapplicableActions.map(action => (
-              <InapplicableAction key={action.id} action={action} />
-            ))}
+            {inapplicableActions
+              .valueSeq()
+              .map(action => <InapplicableAction key={action.id} action={action} />)}
           </Segment.Group>
         </div>
       )}

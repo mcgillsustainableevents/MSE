@@ -10,10 +10,12 @@ const reducer = (state, action) => {
     case 'SET_KV':
       return state.setIn(['data', action.key], action.value);
     case 'VIEW_INAPPLICABLE_ACTIONS':
-    if (state.get('inapplicableAction') === action.category) {
-      return state.set('inapplicableAction', null);
-    }
-    return state.set('inapplicableAction', action.category);
+      if (state.get('inapplicableAction') === action.category) {
+        return state.set('inapplicableAction', null);
+      }
+      return state.set('inapplicableAction', action.category);
+    case 'ENABLE_ACTION':
+      return state.setIn(['actions', action.id, 'applicable'], true);
     default:
       return state;
   }
