@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 const timeToColor = time => {
   if (time === 'LOW') return 'green';
@@ -7,10 +7,6 @@ const timeToColor = time => {
   if (time === 'HIGH') return 'red';
 };
 
-const TimeLabel = ({ time }) => (
-  <Label horizontal color={timeToColor(time)}>
-    {time}
-  </Label>
-);
+const TimeLabel = ({ time }) => <Icon size="large" name="clock" color={timeToColor(time)} />;
 
 export default TimeLabel;
