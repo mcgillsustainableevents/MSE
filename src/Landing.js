@@ -70,7 +70,7 @@ const Landing = () => (
         <Grid.Column width={8}>
           <Link to={{ pathname: '/learn' }}>
             <Button fluid size="massive">
-              Learn
+              Learn more
             </Button>
           </Link>
         </Grid.Column>
