@@ -16,13 +16,13 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
     inapplicable. Click on an action to drop down more information!`}
     </p>
     <CalculatorCategory category="Early Planning Phase" />
-    <CalculatorCategory category="Location" />
-    <CalculatorCategory category="Travel and Transport" />
     <CalculatorCategory category="Equity" />
-    <CalculatorCategory category="Procurement" />
-    <CalculatorCategory category="Food" />
+    <CalculatorCategory category="Location" />
     <CalculatorCategory category="Waste" />
     <CalculatorCategory category="Communication" />
+    <CalculatorCategory category="Food" />
+    <CalculatorCategory category="Procurement" />
+    <CalculatorCategory category="Travel and Transport" />
     <Points />
     <Link to="/submit">
       <Button fluid>Next</Button>

@@ -10,13 +10,13 @@ const Calculator = () => (
       {`Below you’ll find the actions that comprise our certification criteria. Click on an action to drop down more information!`}
     </p>
     <LearnCategory category="Early Planning Phase" />
-    <LearnCategory category="Location" />
-    <LearnCategory category="Travel and Transport" />
     <LearnCategory category="Equity" />
-    <LearnCategory category="Procurement" />
-    <LearnCategory category="Food" />
+    <LearnCategory category="Location" />
     <LearnCategory category="Waste" />
     <LearnCategory category="Communication" />
+    <LearnCategory category="Food" />
+    <LearnCategory category="Procurement" />
+    <LearnCategory category="Travel and Transport" />
   </div>
 );
 
