@@ -68,15 +68,15 @@ const Landing = () => (
       </Item.Group>
       <Grid stackable>
         <Grid.Column width={8}>
-          <Link to={{ pathname: '/questions/1' }}>
-            <Button fluid size="massive">Get certified</Button>
-          </Link>
-        </Grid.Column>
-        <Grid.Column width={8}>
           <Link to={{ pathname: '/learn' }}>
             <Button fluid size="massive">
               Learn
             </Button>
+          </Link>
+        </Grid.Column>
+        <Grid.Column width={8}>
+          <Link to={{ pathname: '/questions/1' }}>
+            <Button fluid size="massive">Get certified</Button>
           </Link>
         </Grid.Column>
         <Grid.Column width={16} textAlign="center">
