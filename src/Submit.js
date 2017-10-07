@@ -3,7 +3,6 @@ import { Button, Container, Divider, Header, List } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
-import ScrollToTop from './ScrollToTop';
 import './Submit.css';
 import {
   checkedSelector,
@@ -21,7 +20,6 @@ const Submit = props => {
   };
   return (
     <Centered>
-      <ScrollToTop />
       <Container text className="submit">
         <Header textAlign="center">{`Let's do it!`}</Header>
         <div className="sub-header">
