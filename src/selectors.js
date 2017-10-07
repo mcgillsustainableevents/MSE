@@ -12,4 +12,9 @@ export const pointsDenominatorSelector = createSelector(actionsSelector, actions
 
 export const dataSelector = state => state.get('data');
 
-export const checkedSelector = createSelector(actionsSelector, actions => actions.filter(action => action.checked).map(action => action.id).toList())
+export const checkedSelector = createSelector(actionsSelector, actions =>
+  actions
+    .filter(action => action.checked)
+    .map(action => action.id)
+    .toList()
+);

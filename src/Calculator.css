@@ -5,8 +5,7 @@
 }
 
 .calculator {
-  padding: 10px;
-  padding-top: 20px;
+  padding: 40px 10px;
   margin: auto;
   max-width: 768px;
 }
