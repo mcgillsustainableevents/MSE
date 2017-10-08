@@ -5,6 +5,7 @@ import './Calculator.css';
 import { Link } from 'react-router-dom';
 import Points from './Points';
 import Logo from './Logo';
+import scrollToTop from './ScrollToTop';
 
 const Calculator = ({ pointsNumerator, pointsDenominator }) => (
   <div className="calculator">
@@ -30,4 +31,4 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
   </div>
 );
 
-export default Calculator;
+export default scrollToTop(Calculator);

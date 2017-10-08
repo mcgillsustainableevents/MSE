@@ -10,6 +10,7 @@ import {
   pointsNumeratorSelector,
   pointsDenominatorSelector
 } from './selectors';
+import scrollToTop from './ScrollToTop';
 
 const Submit = props => {
   const handleClick = () => {
@@ -70,4 +71,4 @@ const mapStateToProps = state => ({
     .set('score', `${pointsNumeratorSelector(state)}/${pointsDenominatorSelector(state)}`)
 });
 
-export default connect(mapStateToProps)(Submit);
+export default scrollToTop(connect(mapStateToProps)(Submit));

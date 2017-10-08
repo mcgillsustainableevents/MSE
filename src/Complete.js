@@ -3,6 +3,8 @@ import { Container, Header } from 'semantic-ui-react';
 import Centered from './Centered';
 import './Complete.css';
 import HomeButton from './HomeButton';
+import scrollToTop from './ScrollToTop';
+
 const Complete = ({ history }) => {
   return (
     <Centered>
@@ -20,4 +22,4 @@ const Complete = ({ history }) => {
   );
 };
 
-export default Complete;
+export default scrollToTop(Complete);

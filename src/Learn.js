@@ -3,6 +3,7 @@ import LearnCategory from './LearnCategory';
 import './Calculator.css';
 import Logo from './Logo';
 import HomeButton from './HomeButton';
+import scrollToTop from './ScrollToTop';
 
 const Calculator = ({ history }) => (
   <div className="calculator">
@@ -24,4 +25,4 @@ const Calculator = ({ history }) => (
   </div>
 );
 
-export default Calculator;
+export default scrollToTop(Calculator);

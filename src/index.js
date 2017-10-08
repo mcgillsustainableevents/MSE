@@ -10,16 +10,13 @@ import './semantic/dist/semantic.min.css';
 import App from './App.js'
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom'
-import ScrollToTop from './ScrollToTop';
 
 const store = createStore(reducer, initialState, applyMiddleware(logger))
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <ScrollToTop>
-        <App/>
-      </ScrollToTop>
+      <App/>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')
