@@ -16,7 +16,7 @@ const Complete = ({ history }) => {
           sustainable.
         </p>
         <p style={{ fontWeight: 400 }}>We look forward to working with you!</p>
-        <Button  onClick={() => history.replace('/')}>Return to home page</Button>
+        <Button fluid onClick={() => history.replace('/')}>Return to home page</Button>
       </Container>
     </Centered>
   );
