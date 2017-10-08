@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 import Centered from './Centered';
 import './Complete.css';
-import HomeButton from './HomeButton';
 import scrollToTop from './ScrollToTop';
+import { Button } from 'semantic-ui-react';
 
 const Complete = ({ history }) => {
   return (
@@ -16,7 +16,7 @@ const Complete = ({ history }) => {
           sustainable.
         </p>
         <p style={{ fontWeight: 400 }}>We look forward to working with you!</p>
-        <HomeButton />
+        <Button  onClick={() => history.replace('/')}>Return to home page</Button>
       </Container>
     </Centered>
   );
