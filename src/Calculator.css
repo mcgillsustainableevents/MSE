@@ -13,3 +13,14 @@
 .calculator-button {
   margin-top: 40px;
 }
+
+.calculator-key {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 605px) {
+  .calculator-key {
+    flex-direction: column;
+  }
+}
