@@ -38,6 +38,7 @@ class TextInput extends React.Component {
             onKeyUp={this.handleKeyUp}
             size={matches ? 'large' : 'huge'}
             ref={input => (this.textInput = input)}
+            placeholder={this.props.placeholder}
             icon={{
               name: 'arrow right',
               disabled: this.state.value.length < 1,

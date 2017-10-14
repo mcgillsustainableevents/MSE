@@ -58,7 +58,7 @@ const App = () => (
         <Question
           number={5}
           question="When is your event?"
-          controls={<TextInput to="/questions/6" valueKey="date" />}
+          controls={<TextInput placeholder={'mm/dd/yy'} to="/questions/6" valueKey="date" />}
         />
       )}
     />

@@ -18,9 +18,9 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
     inapplicable. Click on an action to drop down more information!`}
     </p>
     <Segment className="calculator-key">
-      <div><Icon size="large" name="clock" color="green" />= Low time commitment</div>
+      <div><Icon size="large" name="clock" color="green" />= Lowwe time commitment</div>
       <div><Icon size="large" name="clock" color="yellow" />= Medium time commitment</div>
-      <div><Icon size="large" name="clock" color="red" />= High time commitment</div>
+      <div><Icon size="large" name="clock" color="red" />= Higher time commitment</div>
     </Segment>
     <CalculatorCategory category="Early Planning Phase" />
     <CalculatorCategory category="Equity" />
