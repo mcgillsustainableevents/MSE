@@ -142,7 +142,7 @@ copy[28] = `
 `;
 copy[29] = `
 <p><strong>Why?</strong> According to University policy, if an event is using McGill operating funds, then it must use a pre-approved McGill catering service, with a few exceptions.</p>
-<p><strong>How?</strong> There are two exceptions to this rule: firstly, if you are a student group planning this event using money from your own fund, and secondly, if you are purchasing simple foods as opposed to prepared foods or meals. For example, if you are simply purchasing cheese and crackers for an event, this rule does not apply, but if you are providing pre-made sandwiches for your event attendees, then it does.</p>
+<p><strong>How?</strong> There are two exceptions to this rule: firstly, if you are a student group planning this event using money from your own fund, and secondly, if you are purchasing simple foods as opposed to prepared foods or meals. For example, if you are simply purchasing cheese and crackers for an event, this rule does not apply, but if you are providing pre-made sandwiches for your event attendees, then it does. For more information, and to find out if your event requires this, click <a href="https://www.mcgill.ca/procurement/files/procurement/catering_services_guidelines_final.pdf" target="_blank">here</a>.</p>
 `;
 
 copy[30] = `
