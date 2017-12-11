@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 const scrollToTop = WrappedComponent =>
-   class extends Component {
+  class extends Component {
     componentWillMount() {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     }
     render() {
-      return <WrappedComponent {...this.props}/>
+      return <WrappedComponent {...this.props} />;
     }
-  }
+  };
 
 export default scrollToTop;

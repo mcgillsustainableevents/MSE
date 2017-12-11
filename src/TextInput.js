@@ -32,7 +32,7 @@ class TextInput extends React.Component {
   render() {
     return (
       <Responsive maxDeviceWidth={480}>
-        {matches =>
+        {matches => (
           <Input
             onChange={this.handleChange}
             onKeyUp={this.handleKeyUp}
@@ -46,7 +46,8 @@ class TextInput extends React.Component {
               color: 'blue',
               link: true
             }}
-          />}
+          />
+        )}
       </Responsive>
     );
   }

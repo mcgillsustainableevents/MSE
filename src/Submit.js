@@ -15,7 +15,11 @@ import scrollToTop from './ScrollToTop';
 const Submit = props => {
   const handleClick = () => {
     const request = new XMLHttpRequest();
-    request.open('POST', 'https://us-central1-mcgill-sustainable-events.cloudfunctions.net/Sheets', true);
+    request.open(
+      'POST',
+      'https://us-central1-mcgill-sustainable-events.cloudfunctions.net/Sheets',
+      true
+    );
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify(props.data));
   };

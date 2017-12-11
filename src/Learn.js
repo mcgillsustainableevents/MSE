@@ -22,7 +22,6 @@ const Calculator = ({ history }) => (
     <div className="calculator-button">
       <Button fluid onClick={() => history.push('/questions/1')}>Get certified</Button>
     </div>
-
   </div>
 );
 

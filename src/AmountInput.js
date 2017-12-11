@@ -4,7 +4,6 @@ import { setKV, nextView, lowerPriority } from './actions.js';
 import { Input } from 'semantic-ui-react';
 import Responsive from 'react-responsive';
 
-
 class AmountInput extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +37,7 @@ class AmountInput extends React.Component {
   render() {
     return (
       <Responsive maxDeviceWidth={480}>
-        {matches =>
+        {matches => (
           <Input
             size={matches ? 'large' : 'huge'}
             onChange={this.handleChange}
@@ -51,7 +50,8 @@ class AmountInput extends React.Component {
               color: 'blue',
               link: true
             }}
-          />}
+          />
+        )}
       </Responsive>
     );
   }

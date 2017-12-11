@@ -53,7 +53,7 @@ class DateInput extends React.Component {
   render() {
     return (
       <Responsive maxDeviceWidth={480}>
-        {matches =>
+        {matches => (
           <Input
             placeholder="mm/dd/yy"
             size={matches ? 'large' : 'huge'}
@@ -67,7 +67,8 @@ class DateInput extends React.Component {
               color: 'blue',
               link: true
             }}
-          />}
+          />
+        )}
       </Responsive>
     );
   }

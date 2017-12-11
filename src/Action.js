@@ -1,11 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { checkAction, viewAction } from './actions.js';
-import {
-  Divider,
-  Segment,
-  Checkbox
-} from 'semantic-ui-react';
+import { Divider, Segment, Checkbox } from 'semantic-ui-react';
 import TimeLabel from './TimeLabel';
 import './Action.css';
 
@@ -19,7 +15,7 @@ const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        <div dangerouslySetInnerHTML={{__html: action.info}} />
+        <div dangerouslySetInnerHTML={{ __html: action.info }} />
       </div>
     )}
   </Segment>

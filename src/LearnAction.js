@@ -1,10 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { viewAction } from './actions.js';
-import {
-  Divider,
-  Segment,
-} from 'semantic-ui-react';
+import { Divider, Segment } from 'semantic-ui-react';
 import './Action.css';
 
 const LearnAction = ({ action, active, handleSegmentClick }) => (
@@ -15,7 +12,7 @@ const LearnAction = ({ action, active, handleSegmentClick }) => (
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        <div dangerouslySetInnerHTML={{__html: action.info}} />
+        <div dangerouslySetInnerHTML={{ __html: action.info }} />
       </div>
     )}
   </Segment>

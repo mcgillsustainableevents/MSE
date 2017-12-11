@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { checkAction, viewAction } from './actions.js';
-import {
-  Divider,
-  Segment,
-  Label
-} from 'semantic-ui-react';
+import { Divider, Segment, Label } from 'semantic-ui-react';
 import './Action.css';
 
 const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCheck }) => (
-  <Segment onClick={e => {e.stopPropagation(); handleSegmentClick(action.id)}}>
+  <Segment
+    onClick={e => {
+      e.stopPropagation();
+      handleSegmentClick(action.id);
+    }}
+  >
     <div className="action-title">
       <div className="title">
         <Label horizontal>N/A</Label>
@@ -19,7 +20,7 @@ const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCh
     {active && (
       <div onClick={e => e.stopPropagation()}>
         <Divider />
-        <div dangerouslySetInnerHTML={{__html: action.info}} />
+        <div dangerouslySetInnerHTML={{ __html: action.info }} />
       </div>
     )}
   </Segment>

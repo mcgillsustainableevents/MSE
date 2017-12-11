@@ -2,16 +2,16 @@
   color: white;
 }
 
-.submit>.header {
+.submit > .header {
   font-size: 4rem !important;
   color: white !important;
 }
 
-.submit>strong {
+.submit > strong {
   text-align: center !important;
 }
 
-.submit>.sub-header {
+.submit > .sub-header {
   font-weight: 400;
   text-align: center;
 }
@@ -20,7 +20,7 @@
   font-weight: 300;
 }
 
-.submit>.email {
+.submit > .email {
   font-weight: 300;
   text-align: center;
 }

@@ -1,14 +1,7 @@
 import React from 'react';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
-import {
-  Button,
-  Image,
-  Header,
-  Container,
-  Grid,
-  Item
-} from 'semantic-ui-react';
+import { Button, Image, Header, Container, Grid, Item } from 'semantic-ui-react';
 import Logo from './Logo';
 import './Landing.css';
 import spfLogo from './spf_logo.svg';
@@ -76,7 +69,9 @@ const Landing = () => (
         </Grid.Column>
         <Grid.Column width={8}>
           <Link to={{ pathname: '/questions/1' }}>
-            <Button fluid size="massive">Get certified</Button>
+            <Button fluid size="massive">
+              Get certified
+            </Button>
           </Link>
         </Grid.Column>
         <Grid.Column width={16} textAlign="center">
