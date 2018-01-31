@@ -153,7 +153,7 @@ addAction(19, {
 });
 addAction(20, {
   title:
-    'Set community ground-rules, and provide an opportunity to share preferred pronouns and access needs',
+    'Set community ground-rules, and provide an opportunity to share pronouns and access needs',
   time: 'LOW',
   category: 'Equity',
   points: 1,
