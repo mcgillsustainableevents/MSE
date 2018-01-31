@@ -104,7 +104,7 @@ copy[19] = `
 
 copy[20] = `
 <p><strong>Why?</strong> Event attendees come from a wide variety of backgrounds and lived-experiences. In order to provide everyone an equally interactive and engaging learning space – one where participants and facilitators can address topics openly and honestly – it is important to provide structures and opportunities for safe self-expression.</p>
-<p><strong>How?</strong> If possible, we recommend offering the opportunity to state <a href="http://lbgtrc.msu.edu/wp-content/uploads/2010/08/PGP-flyer.pdf" target="_blank">preferred gender pronouns</a> during event registration. Otherwise, this practice can take place at the beginning of any small-group discussion – This can easily be integrated into any introductory/ice-breaking activities.</p>
+<p><strong>How?</strong> If possible, we recommend offering the opportunity to state <a href="http://lbgtrc.msu.edu/wp-content/uploads/2010/08/PGP-flyer.pdf" target="_blank">gender pronouns</a> during event registration. Otherwise, this practice can take place at the beginning of any small-group discussion – This can easily be integrated into any introductory/ice-breaking activities.</p>
 <strong>Informational video coming soon.</strong>
 `;
 
