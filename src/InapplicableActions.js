@@ -15,7 +15,7 @@ const InapplicableActions = ({
 }) =>
   inapplicableActions.size > 0 && (
     <Segment onClick={() => handleInapplicableActionsClick(category)}>
-      Inapplicable actions
+      <span className="title">Inapplicable actions</span>
       {open && (
         <div className="inapplicable-actions">
           <Segment.Group>

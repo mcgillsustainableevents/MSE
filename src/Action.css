@@ -10,3 +10,7 @@
 .title {
   align-self: flex-start;
 }
+
+.title:hover {
+  font-weight: bold;
+}
