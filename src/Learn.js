@@ -20,7 +20,9 @@ const Calculator = ({ history }) => (
     <LearnCategory category="Procurement" />
     <LearnCategory category="Travel and Transport" />
     <div className="calculator-button">
-      <Button fluid onClick={() => history.push('/questions/1')}>Get certified</Button>
+      <Button fluid onClick={() => history.push('/questions/1')}>
+        Get certified
+      </Button>
     </div>
   </div>
 );

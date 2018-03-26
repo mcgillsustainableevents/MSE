@@ -8,7 +8,7 @@ import {
   checkedSelector,
   dataSelector,
   pointsNumeratorSelector,
-  pointsDenominatorSelector
+  pointsDenominatorSelector,
 } from './selectors';
 import scrollToTop from './ScrollToTop';
 
@@ -18,7 +18,7 @@ const Submit = props => {
     request.open(
       'POST',
       'https://us-central1-mcgill-sustainable-events.cloudfunctions.net/Sheets',
-      true
+      true,
     );
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify(props.data));
@@ -59,8 +59,12 @@ const Submit = props => {
         </Link>
         <br />
         <div className="email">
-          If you have any questions, comments, or concerns, please contact us at any time at{' '}
-          <a className="landing-link" href="mailto:events.sustainability@mcgill.ca">
+          If you have any questions, comments, or concerns, please contact us at
+          any time at{' '}
+          <a
+            className="landing-link"
+            href="mailto:events.sustainability@mcgill.ca"
+          >
             events.sustainability@mcgill.ca
           </a>
         </div>
@@ -72,7 +76,10 @@ const Submit = props => {
 const mapStateToProps = state => ({
   data: dataSelector(state)
     .set('checked', checkedSelector(state).join(', '))
-    .set('score', `${pointsNumeratorSelector(state)}/${pointsDenominatorSelector(state)}`)
+    .set(
+      'score',
+      `${pointsNumeratorSelector(state)}/${pointsDenominatorSelector(state)}`,
+    ),
 });
 
 export default scrollToTop(connect(mapStateToProps)(Submit));

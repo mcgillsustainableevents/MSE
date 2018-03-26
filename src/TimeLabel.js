@@ -7,6 +7,8 @@ const timeToColor = time => {
   if (time === 'HIGH') return 'red';
 };
 
-const TimeLabel = ({ time }) => <Icon size="large" name="clock" color={timeToColor(time)} />;
+const TimeLabel = ({ time }) => (
+  <Icon size="large" name="clock" color={timeToColor(time)} />
+);
 
 export default TimeLabel;

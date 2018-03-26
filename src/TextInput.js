@@ -44,7 +44,7 @@ class TextInput extends React.Component {
               disabled: this.state.value.length < 1,
               onClick: this.handleClick,
               color: 'blue',
-              link: true
+              link: true,
             }}
           />
         )}
@@ -58,7 +58,7 @@ const mapDispatchToProps = (dispatch, { history, to }) => {
     setKV: (key, value) => {
       dispatch(setKV(key, value));
       history.replace(to);
-    }
+    },
   };
 };
 

@@ -11,7 +11,7 @@ const InapplicableActions = ({
   category,
   inapplicableActions,
   open,
-  handleInapplicableActionsClick
+  handleInapplicableActionsClick,
 }) =>
   inapplicableActions.size > 0 && (
     <Segment onClick={() => handleInapplicableActionsClick(category)}>
@@ -21,7 +21,9 @@ const InapplicableActions = ({
           <Segment.Group>
             {inapplicableActions
               .valueSeq()
-              .map(action => <InapplicableAction key={action.id} action={action} />)}
+              .map(action => (
+                <InapplicableAction key={action.id} action={action} />
+              ))}
           </Segment.Group>
         </div>
       )}
@@ -30,13 +32,18 @@ const InapplicableActions = ({
 
 const mapStateToProps = (state, { category }) => ({
   inapplicableActions: actionsSelector(state).filter(
-    action => action.category === category && action.learn === false && action.applicable === false
+    action =>
+      action.category === category &&
+      action.learn === false &&
+      action.applicable === false,
   ),
-  open: state.get('inapplicableAction') === category
+  open: state.get('inapplicableAction') === category,
 });
 
 const mapDispatchToProps = {
-  handleInapplicableActionsClick: viewInapplicableActions
+  handleInapplicableActionsClick: viewInapplicableActions,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(InapplicableActions);
+export default connect(mapStateToProps, mapDispatchToProps)(
+  InapplicableActions,
+);

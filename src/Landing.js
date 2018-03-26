@@ -1,7 +1,14 @@
 import React from 'react';
 import Centered from './Centered';
 import { Link } from 'react-router-dom';
-import { Button, Image, Header, Container, Grid, Item } from 'semantic-ui-react';
+import {
+  Button,
+  Image,
+  Header,
+  Container,
+  Grid,
+  Item,
+} from 'semantic-ui-react';
 import Logo from './Logo';
 import './Landing.css';
 import spfLogo from './spf_logo.svg';
@@ -15,10 +22,14 @@ const Landing = () => (
         McGill Sustainable Events is an initiative that grew from the{' '}
         <a className="landing-link" href="http://www.mcgill.ca/sustainability">
           McGill Office of Sustainability
-        </a>. Our mandate is to provide consultation, training, resources, and certification with
-        regards to the sustainability (ecological, social, and economic) of events planned by McGill
-        students, staff, and faculty. We can be reached at{' '}
-        <a className="landing-link" href="mailto:events.sustainability@mcgill.ca">
+        </a>. Our mandate is to provide consultation, training, resources, and
+        certification with regards to the sustainability (ecological, social,
+        and economic) of events planned by McGill students, staff, and faculty.
+        We can be reached at{' '}
+        <a
+          className="landing-link"
+          href="mailto:events.sustainability@mcgill.ca"
+        >
           events.sustainability@mcgill.ca
         </a>.
       </p>
@@ -29,8 +40,8 @@ const Landing = () => (
               Learn.
             </Header>
             <p>
-              Answer some quick questions and discover the most important actions to take to have
-              your event certified.
+              Answer some quick questions and discover the most important
+              actions to take to have your event certified.
             </p>
           </Item.Content>
         </Item>
@@ -40,9 +51,9 @@ const Landing = () => (
               Implement.
             </Header>
             <p style={{ fontWeight: 300 }}>
-              After you’ve applied for certification, our consultant team will be in touch to guide
-              you through the implementation process, and arrange your certification meeting (~30
-              min).
+              After you’ve applied for certification, our consultant team will
+              be in touch to guide you through the implementation process, and
+              arrange your certification meeting (~30 min).
             </p>
           </Item.Content>
         </Item>
@@ -52,9 +63,10 @@ const Landing = () => (
               Get certified.
             </Header>
             <p>
-              We know you’ll be proud of your accomplishments, and we want to help you share that
-              pride! Following your certification, you will be provided publicity material to
-              promote your achievement of bronze, silver, or gold certification.
+              We know you’ll be proud of your accomplishments, and we want to
+              help you share that pride! Following your certification, you will
+              be provided publicity material to promote your achievement of
+              bronze, silver, or gold certification.
             </p>
           </Item.Content>
         </Item>
@@ -76,11 +88,19 @@ const Landing = () => (
         </Grid.Column>
         <Grid.Column width={16} textAlign="center">
           <span className="landing-image-caption">Funded by</span>
-          <Image width={200} src={spfLogo} href="http://www.mcgill.ca/sustainability/spf" />
+          <Image
+            width={200}
+            src={spfLogo}
+            href="http://www.mcgill.ca/sustainability/spf"
+          />
         </Grid.Column>
         <Grid.Column width={16} textAlign="center">
           <span className="landing-image-caption">In partnership with </span>
-          <Image width={200} src={samLogo} href="http://www.mcgill.ca/sustainability/spf" />
+          <Image
+            width={200}
+            src={samLogo}
+            href="http://www.mcgill.ca/sustainability/spf"
+          />
         </Grid.Column>
       </Grid>
     </Container>

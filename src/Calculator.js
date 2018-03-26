@@ -12,18 +12,20 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
   <div className="calculator">
     <Logo width={500} />
     <p className="calculator-copy">
-      Below you’ll find the actions that comprise our certification criteria. Each action is worth 1
-      or 2 points, which are tallied to determine an event’s level of certification. Based on your
-      questionnaire responses, you may find some actions are labeled inapplicable. Click on an
-      action to drop down more information, and identify which actions you either plan to complete,
-      or have completed, by ticking the box next to it!
+      Below you’ll find the actions that comprise our certification criteria.
+      Each action is worth 1 or 2 points, which are tallied to determine an
+      event’s level of certification. Based on your questionnaire responses, you
+      may find some actions are labeled inapplicable. Click on an action to drop
+      down more information, and identify which actions you either plan to
+      complete, or have completed, by ticking the box next to it!
     </p>
     <Segment className="calculator-key">
       <div>
         <Icon size="large" name="clock" color="green" />= Lower time commitment
       </div>
       <div>
-        <Icon size="large" name="clock" color="yellow" />= Medium time commitment
+        <Icon size="large" name="clock" color="yellow" />= Medium time
+        commitment
       </div>
       <div>
         <Icon size="large" name="clock" color="red" />= Higher time commitment

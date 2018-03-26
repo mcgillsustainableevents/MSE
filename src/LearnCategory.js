@@ -9,13 +9,17 @@ const LearnCategory = ({ category, actions }) => (
   <div className="category">
     <h1 className="category-header">{category}</h1>
     <Segment.Group>
-      {actions.valueSeq().map(action => <LearnAction key={action.id} action={action} />)}
+      {actions
+        .valueSeq()
+        .map(action => <LearnAction key={action.id} action={action} />)}
     </Segment.Group>
   </div>
 );
 
 const mapStateToProps = (state, { category }) => ({
-  actions: actionsSelector(state).filter(action => action.category === category)
+  actions: actionsSelector(state).filter(
+    action => action.category === category,
+  ),
 });
 
 export default connect(mapStateToProps)(LearnCategory);

@@ -4,11 +4,18 @@ import Category from './Category';
 import moment from 'moment';
 
 const mapStateToProps = (state, { category }) => {
-  if (moment(state.getIn(['data', 'date']), 'MM/DD/YY').isBefore(moment().add(2, 'weeks'))) {
+  if (
+    moment(state.getIn(['data', 'date']), 'MM/DD/YY').isBefore(
+      moment().add(2, 'weeks'),
+    )
+  ) {
     return {
       actions: actionsSelector(state)
         .filter(
-          action => action.category === category && action.learn === false && action.applicable
+          action =>
+            action.category === category &&
+            action.learn === false &&
+            action.applicable,
         )
         .sort((a, b) => {
           const timeToNum = action => {
@@ -32,14 +39,17 @@ const mapStateToProps = (state, { category }) => {
             return 0;
           }
           return 0;
-        })
+        }),
     };
   }
 
   return {
     actions: actionsSelector(state).filter(
-      action => action.category === category && action.learn === false && action.applicable
-    )
+      action =>
+        action.category === category &&
+        action.learn === false &&
+        action.applicable,
+    ),
   };
 };
 

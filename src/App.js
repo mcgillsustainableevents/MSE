@@ -58,7 +58,13 @@ const App = () => (
         <Question
           number={5}
           question="When is your event?"
-          controls={<TextInput placeholder={'mm/dd/yy'} to="/questions/6" valueKey="date" />}
+          controls={
+            <TextInput
+              placeholder={'mm/dd/yy'}
+              to="/questions/6"
+              valueKey="date"
+            />
+          }
         />
       )}
     />
@@ -78,7 +84,13 @@ const App = () => (
         <Question
           number={7}
           question="Will you be serving food or beverages?"
-          controls={<Buttons valueKey="food" enable={[30, 31, 32, 33, 34, 35]} to="/questions/8" />}
+          controls={
+            <Buttons
+              valueKey="food"
+              enable={[30, 31, 32, 33, 34, 35]}
+              to="/questions/8"
+            />
+          }
         />
       )}
     />
@@ -88,7 +100,9 @@ const App = () => (
         <Question
           number={8}
           question="Is your event sponsored?"
-          controls={<Buttons valueKey="sponsored" enable={[1]} to="/questions/9" />}
+          controls={
+            <Buttons valueKey="sponsored" enable={[1]} to="/questions/9" />
+          }
         />
       )}
     />
@@ -98,7 +112,13 @@ const App = () => (
         <Question
           number={9}
           question="Will you be buying any supplies?"
-          controls={<Buttons valueKey="supplies" enable={[26, 27, 28]} to="/questions/10" />}
+          controls={
+            <Buttons
+              valueKey="supplies"
+              enable={[26, 27, 28]}
+              to="/questions/10"
+            />
+          }
         />
       )}
     />
@@ -108,7 +128,13 @@ const App = () => (
         <Question
           number={10}
           question="Will you be printing, creating or purchasing materials for distribution or promotion?"
-          controls={<Buttons valueKey="materials" enable={[38, 40]} to="/questions/11" />}
+          controls={
+            <Buttons
+              valueKey="materials"
+              enable={[38, 40]}
+              to="/questions/11"
+            />
+          }
         />
       )}
     />
@@ -118,7 +144,9 @@ const App = () => (
         <Question
           number={11}
           question="Are you charging for entrance to your event?"
-          controls={<Buttons valueKey="charging" enable={[6]} to="/questions/12" />}
+          controls={
+            <Buttons valueKey="charging" enable={[6]} to="/questions/12" />
+          }
         />
       )}
     />
@@ -128,7 +156,13 @@ const App = () => (
         <Question
           number={12}
           question="Does your event include small-group discussions?"
-          controls={<Buttons valueKey="discussions" enable={[20, 24]} to="/calculator" />}
+          controls={
+            <Buttons
+              valueKey="discussions"
+              enable={[20, 24]}
+              to="/calculator"
+            />
+          }
         />
       )}
     />

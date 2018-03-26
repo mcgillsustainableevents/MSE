@@ -20,7 +20,7 @@ const LearnAction = ({ action, active, handleSegmentClick }) => (
 
 const mapStateToProps = (state, { action }) => {
   return {
-    active: state.get('selectedAction') === action.id
+    active: state.get('selectedAction') === action.id,
   };
 };
 

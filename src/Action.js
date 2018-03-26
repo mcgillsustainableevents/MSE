@@ -24,7 +24,7 @@ const Action = ({ action, active, handleActionClick, handleActionCheck }) => (
 const mapStateToProps = (state, { action }) => {
   return {
     active: state.get('selectedAction') === action.id,
-    data: state.data
+    data: state.data,
   };
 };
 
@@ -33,7 +33,7 @@ const mapDispatchToProps = (dispatch, { action }) => ({
   handleActionCheck: e => {
     e.stopPropagation();
     dispatch(checkAction(action.id));
-  }
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Action);

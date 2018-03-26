@@ -65,7 +65,7 @@ class DateInput extends React.Component {
               disabled: !this.state.validDate,
               onClick: this.handleClick,
               color: 'blue',
-              link: true
+              link: true,
             }}
           />
         )}
@@ -82,7 +82,7 @@ const mapDispatchToProps = dispatch => {
     },
     lowerPriority: ids => {
       ids.map(id => dispatch(lowerPriority(id)));
-    }
+    },
   };
 };
 

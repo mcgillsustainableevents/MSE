@@ -48,7 +48,7 @@ class AmountInput extends React.Component {
               disabled: this.state.value.length < 1,
               onClick: this.handleClick,
               color: 'blue',
-              link: true
+              link: true,
             }}
           />
         )}
@@ -65,7 +65,7 @@ const mapDispatchToProps = dispatch => {
     },
     lowerPriority: ids => {
       ids.map(id => dispatch(lowerPriority(id)));
-    }
+    },
   };
 };
 

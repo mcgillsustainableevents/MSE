@@ -12,5 +12,5 @@ export const viewAction = id => ({ type: 'VIEW_ACTION', id });
 
 export const viewInapplicableActions = category => ({
   type: 'VIEW_INAPPLICABLE_ACTIONS',
-  category
+  category,
 });

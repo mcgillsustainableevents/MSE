@@ -4,7 +4,12 @@ import { checkAction, viewAction } from './actions.js';
 import { Divider, Segment, Label } from 'semantic-ui-react';
 import './Action.css';
 
-const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCheck }) => (
+const InapplicableAction = ({
+  action,
+  active,
+  handleSegmentClick,
+  handleActionCheck,
+}) => (
   <Segment
     onClick={e => {
       e.stopPropagation();
@@ -29,10 +34,13 @@ const InapplicableAction = ({ action, active, handleSegmentClick, handleActionCh
 const mapStateToProps = (state, { action }) => {
   return {
     active: state.get('selectedAction') === action.id,
-    data: state.data
+    data: state.data,
   };
 };
 
-const mapDispatchToProps = { handleSegmentClick: viewAction, handleActionCheck: checkAction };
+const mapDispatchToProps = {
+  handleSegmentClick: viewAction,
+  handleActionCheck: checkAction,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(InapplicableAction);

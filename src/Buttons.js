@@ -26,7 +26,7 @@ const mapDispatchToProps = (dispatch, { history, enable, to, valueKey }) => {
     onNoClick: () => {
       dispatch(setKV(valueKey, false));
       history.replace(to);
-    }
+    },
   };
 };
 
