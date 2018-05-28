@@ -75,7 +75,7 @@ addAction(6, {
   applicable: false,
 });
 addAction(7, {
-  title: 'Implement Universal Design principles',
+  title: 'Implement Universal Design principles for presentations',
   time: 'HIGH',
   category: 'Early Planning Phase',
   points: 1,
