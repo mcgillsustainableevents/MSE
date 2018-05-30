@@ -261,4 +261,9 @@ copy[47] = `
 <p><strong>How?</strong> Simply provide a space away from the main event area, possibly near food, beverages and/or the restrooms. Ensure that the location of this space is communicated clearly at the beginning and throughout the event.</p>
 `;
 
+copy[48] = `
+<p><strong>Why?</strong> Single-use water bottles are one of the largest contributors to plastic waste on campus – every year we use more than 100,000 water bottles only to throw them out right afterwards. While recycling them is a step in the right direction, using reusable water bottles completely negates the need for that waste, as well as negates the energy that would have otherwise been used to fill and ship those bottles. This is why McGill has made a huge step by officially banning the sale of single-use water bottles on campus as of May 2019 and taking steps to reduce having single-use water bottles at events.</p>
+<p><strong>How?</strong> There are a number of ways to ensure that your event doesn’t need single-use water bottles. Firstly, and perhaps most simply, asking your attendees to bring their own water bottle is always an option. However, if the scale or style of your event does not allow for this, then other options include having water jugs and compostable cups, or water-refill stations and reusable water bottles available at your event.</p>
+`;
+
 export default copy;

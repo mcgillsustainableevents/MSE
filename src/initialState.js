@@ -336,6 +336,11 @@ addAction(47, {
   category: 'Equity',
   learn: true,
 });
+addAction(48, {
+          title: 'Comply with McGill’s single-use water bottle ban',
+          category: 'Food',
+          learn: true,
+          });
 
 const initialState = Map({
   actions,
