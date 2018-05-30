@@ -32,9 +32,17 @@ copy[6] = `
 `;
 
 copy[7] = `
-<p><strong>Why?</strong> Different individuals and communities face various barriers to participation. In order to make your event as inclusive as possible, it is important that considerations be made of attendees&#39; varying needs. Universal Design is the design and composition of an environment so that it can be accessed, understood and used to the greatest extent possible by all people regardless of their age, size, ability, etc.</p>
+<p><strong>Why?</strong> Different individuals and communities face various barriers to participation. In order to make your event as inclusive as possible, it is important that considerations be made of attendees' varying needs. Universal Design is the design and composition of an environment so that it can be accessed, understood and used to the greatest extent possible by all people regardless of their age, size, ability, etc.</p>
 <p><strong>How?</strong>
-To gain a better understanding of Universal Design, we encourage you to visit the website of the <a href="https://www.mcgill.ca/osd/office-students-disabilities" target="_blank">McGill Office for Students with Disabilities</a>. In particular, the video found on <a href="http://www.mcgill.ca/osd/facultyinfo/video-resources" target="_blank">this page</a> is very informative. Some common ways of implementing Universal Design at your event could include the offering of translation services (including ASL), accessible signage and materials, among others.</p>
+The three main Universal Design Principles are representation, action and expression, and engagement. These are important to consider in every type of event (workshops, speakers, panels, networking, etc) and particularly for events where considerable amounts of information is shared. Here are a few things you can implement in your events: <br>
+<ul>
+<li>Have multiple means of representing the information you display. Try to verbally communicate the information on the PowerPoint and vice-versa to help people with hearing and visual impairments. i.e. indicate visually and verbally where the washrooms are in the building, explain verbally what the content of an image on the PowerPoint is.</li>
+<li>Structure your PowerPoint presentations such that people know what the structure of the presentation will be and can find landmarks throughout the presentation. Presentation outlines, headings, and consistent layout can assist in doing this. Concept maps can help for more specific concepts within the presentation.</li>
+<li>Ensure that the presentations in your event are easily readable by as many people as possible. Ensure that you have good contrast between text and background, and use text colors that are easily distinguished by all (i.e. choose green and purple over green and red as they offer better contrast for people with difficulty differentiating colors). Also provide short image captions, avoid glossy colors, and emphasize key points using both colors and physical means (i.e. use bold or underlined text and bigger fonts). Use sans serif fonts instead of serif (e.g. Arial or Verdana instead of Times New Roman).</li>
+<li>If possible, provide a copy of the content presented in advance so attendees can follow the presentation on a printed or downloaded version. If you do, ensure that all your documents can be easily read by a screen reader; Microsoft accessibility checker feature can be a useful tool to help you.</li>
+<li>Give people several means of engaging with the event: answering quizzes, collaborating in a workshop through cloud servers, allowing people to ask questions during or after the event.</li>
+<li>Allow for multiple means of expression: offer the opportunity to ask questions at a microphone and on online platforms (Twitter feed and Slido), allow presenters to attend in person or through video-conferencing platforms.</li>
+</ul></p>
 `;
 
 copy[8] = `
