@@ -87,7 +87,7 @@ const App = () => (
           controls={
             <Buttons
               valueKey="food"
-              enable={[30, 31, 32, 33, 34, 35]}
+              enable={[30, 31, 32, 33, 34, 35, 48]}
               to="/questions/8"
             />
           }
