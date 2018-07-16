@@ -338,6 +338,7 @@ addAction(47, {
 });
 addAction(48, {
           title: 'Comply with McGill’s single-use water bottle ban',
+          time: 'MED',
           category: 'Food',
           learn: false,
           });
