@@ -40,7 +40,7 @@ addAction(1, {
 });
 
 addAction(2, {
-  title: 'Integrate diversity into recruitment strategy',
+  title: 'Integrate diversity into your planning team recruitment',
   time: 'MED',
   category: 'Early Planning Phase',
   points: 1,
