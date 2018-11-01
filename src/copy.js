@@ -29,6 +29,7 @@ copy[5] = `
 copy[6] = `
 <p><strong>Why?</strong> Certain individuals and communities may be systematically disadvantaged from attending your event due to various financial constraints. In order to host events that are financially accessible to all, it is important to offer pricing models that offer flexibility.</p>
 <p><strong>How?</strong> A commonly practiced example of flexible pricing models is the offering of student and senior discounts. Other models include pricing your event by donation, and of course an ideal model is offering free admission for certain/all attendees!</p>
+<p>To further ensure the financial accessibility of your event, you can consider other tips listed in <a href="https://drive.google.com/file/d/1v7DlDSdo5lXFurDb9k3YyNJWwA5xfi6v/view" target="_blank">this resource</a>.</p>
 `;
 
 copy[7] = `
@@ -63,11 +64,13 @@ copy[10] = `
 copy[11] = `
 <p><strong>Why?</strong> Individuals with varying levels of physical ability could potentially be prevented from participating in your event if an accessible venue is not offered. <strong> </strong> It is important that your event be free of as many physical barriers as possible. Physical barriers of access can include: inaccessible elevations (lack of ramps, lifts, etc.), lack of accessible restrooms, inappropriate lighting, and more.</p>
 <p><strong>How?</strong> Thanks to the McGill Office for Students with Disabilities, a number of <a href="http://www.mcgill.ca/osd/access" target="_blank">resources</a> are available that can help you plan your event to be physically accessible to all. In addition, if you’d like to see the accessibility details (entrances, washrooms, barriers) for each building on McGill’s campuses, click <a href="http://www.mcgill.ca/osd/files/osd/accessibilityguide_downtowncampusupdate.pdf" target="_blank">here</a> for the Downtown Campus and <a href="http://www.mcgill.ca/osd/files/osd/accessibilityguide_macdonaldcampus.pdf" target="_blank">here</a>.</p>
+<p>The Social Equity and Diversity Education Office lists a few tips for reducing physical barriers in <a href="https://drive.google.com/file/d/1v7DlDSdo5lXFurDb9k3YyNJWwA5xfi6v/view" target="_blank">this resource</a> on inclusive event planning.</p>
 `;
 
 copy[12] = `
 <p><strong>Why?</strong> In order to provide an event that all are able to participate in, it is important that your event be accessible for those who depend on using public transportation to get there. We consider a venue to be easily accessible via public transportation to be one that is less than a 5 minute walk from the nearest transport drop-off point.</p>
 <p><strong>How?</strong> The public transit system in Montreal (STM) offers a number of public transport options that attendees can make use of to get to your event. For more information on these options and their drop-off points, visit the STM&#39;s <a href="http://www.stm.info/en" target="_blank">website</a>.</p>
+
 `;
 
 copy[13] = `
@@ -169,8 +172,8 @@ copy[30] = `
 `;
 
 copy[31] = `
-<p><strong>Why?</strong> It is important to provide a comfortable environment for your attendees, and part of this is ensuring that everyone&#39;s dietary restrictions are accommodated for. In addition, providing non-alcoholic options when your event is serving alcohol is incredibly important for providing a safer and more comfortable environment for those who choose not to consume alcohol.</p>
-<p><strong>How?</strong> Before you purchase any food for your event, ensure that you have communicated with any event attendees to see if anyone has dietary restrictions. This can be done in several ways, including in a registration form for your event, in an email directly to event attendees, or simply by providing contact information through email or social media for event attendees to reach out to in the case that they have a dietary restriction. Obviously, you should do your best to accommodate for any requests you receive, and communicate to the event attendee(s) f you can&#39;t do so. At the event, we recommend that any food provided is marked with common allergens such as dairy or nuts. In the event that alcohol is being served, ensure that a non-alcoholic alternative is offered in similar dishware to the alcoholic beverages in order to ensure that people feel comfortable choosing either.</p>
+<p><strong>Why?</strong> It is important to provide a comfortable environment for your attendees, and part of this is ensuring that everyone's dietary restrictions are accommodated for. By tending to your attendees’ dietary needs, you help make the event more inclusive and accessible.</p>
+<p><strong>How?</strong> Before you purchase any food for your event, ensure that you have communicated with any event attendees to see if anyone has dietary restrictions. This can be done in several ways, including in a registration form for your event, in an email directly to event attendees, or simply by providing contact information through email or social media for event attendees to reach out to in the case that they have a dietary restriction. Obviously, you should do your best to accommodate for any requests you receive, and communicate to the event attendee(s) f you can't do so. At the event, we recommend that any food provided is marked with common allergens such as dairy or nuts. More tips on dietary accommodations can be found on <a href="https://drive.google.com/file/d/1v7DlDSdo5lXFurDb9k3YyNJWwA5xfi6v/view" target="_blank">this document</a> on inclusive event planning, prepared by the Social Equity and Diversity Education Office.</p>
 `;
 
 copy[32] = `
@@ -264,6 +267,11 @@ copy[47] = `
 copy[48] = `
 <p><strong>Why?</strong> Single-use water bottles are one of the largest contributors to plastic waste on campus – every year we use more than 100,000 water bottles only to throw them out right afterwards. While recycling them is a step in the right direction, using reusable water bottles completely negates the need for that waste, as well as negates the energy that would have otherwise been used to fill and ship those bottles. This is why McGill has made a huge step by officially banning the sale of single-use water bottles on campus as of May 2019 and taking steps to reduce having single-use water bottles at events.</p>
 <p><strong>How?</strong> There are a number of ways to ensure that your event doesn’t need single-use water bottles. Firstly, and perhaps most simply, asking your attendees to bring their own water bottle is always an option. However, if the scale or style of your event does not allow for this, then other options include having water jugs and compostable cups, or water-refill stations and reusable water bottles available at your event.</p>
+`;
+
+copy[49] = `
+<p><strong>Why?</strong> Providing non-alcoholic options when your event is serving alcohol is incredibly important for providing a safer and more comfortable environment for those who choose not to consume alcohol.</p>
+<p><strong>How?</strong> If alcohol is being served, ensure that a non-alcoholic alternative is offered in similar dishware to the alcoholic beverages in order to ensure that people feel comfortable choosing either. Make sure to communicate the different beverage options to your attendees as well. <a href="https://drive.google.com/file/d/1v7DlDSdo5lXFurDb9k3YyNJWwA5xfi6v/view" target="_blank">This resource</a> on inclusive event planning provides useful tips regarding alcoholic beverages at events.</p>
 `;
 
 export default copy;

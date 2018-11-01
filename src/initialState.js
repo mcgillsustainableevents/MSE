@@ -231,7 +231,7 @@ addAction(30, {
 });
 addAction(31, {
   title:
-    'Ask about, accommodate, and communicate dietary restrictions. If alcohol is served, offer non-alcoholic alternatives',
+    'Ask about, accommodate, and communicate dietary restrictions.',
   time: 'MED',
   category: 'Food',
   points: 2,
@@ -342,7 +342,14 @@ addAction(48, {
           category: 'Food',
           learn: false,
           });
-
+addAction(49, {
+          title:
+          'If alcohol is served, offer non-alcoholic alternatives',
+          time: 'MED',
+          category: 'Food',
+          points: 2,
+          applicable: false,
+          });
 const initialState = Map({
   actions,
   selectedAction: null,
