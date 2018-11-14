@@ -37,7 +37,7 @@ const Landing = () => (
         <Item>
           <Item.Content verticalAlign="middle">
             <Header style={{ color: 'white' }} size="large">
-              Learn.
+              Learn
             </Header>
             <p>
               Answer some quick questions and discover the most important
@@ -48,7 +48,7 @@ const Landing = () => (
         <Item>
           <Item.Content verticalAlign="middle">
             <Header style={{ color: 'white' }} size="large">
-              Implement.
+              Implement
             </Header>
             <p style={{ fontWeight: 300 }}>
               After you’ve applied for certification, our consultant team will
@@ -60,7 +60,7 @@ const Landing = () => (
         <Item>
           <Item.Content verticalAlign="middle">
             <Header style={{ color: 'white' }} size="large">
-              Get certified.
+              Get certified
             </Header>
             <p>
               We know you’ll be proud of your accomplishments, and we want to
