@@ -2,7 +2,7 @@ const copy = {};
 
 copy[1] = `
 <p><strong>Why?</strong> Even the smallest events can produce impacts reaching far beyond their immediate time and place. Whether through their direct operations or investments, firms of all sizes can pose significant risks to ecology and humans alike. It is important to consider partnerships with organizations and sponsors that have positive reputations for consideration and mitigation of the potential environmental, social, and economic impacts of their operations.</p>
-<p><strong>How?</strong> Recognizing the importance of Corporate Social Responsibility, many organizations and firms publish their CSR mandates or strategies online – This can be a great way to find out what your potential partners&#39; approach to sustainability is. We also recommend considering certified <a href="https://www.bcorporation.net/what-are-b-corps" target="_blank">B-Corp</a>, <a href="http://fairtrade.ca" target="_blank">Fair Trade</a>, and <a href="https://www.onepercentfortheplanet.org/about-us" target="_blank">1% For The Planet</a> organizations, as well as those ranked within <a href="http://www.corporateknights.com/reports/2017-global-100/" target="_blank">Corporate Knights&#39; 2017 global 100</a> socially responsible firms list.</p>
+<p><strong>How?</strong> Recognizing the importance of Corporate Social Responsibility, many organizations and firms publish their CSR mandates or strategies online – This can be a great way to find out what your potential partners&#39; approach to sustainability is. We also recommend considering certified <a href="https://www.bcorporation.net/what-are-b-corps" target="_blank">B-Corp</a>, <a href="http://fairtrade.ca" target="_blank">Fair Trade</a>, and <a href="https://www.onepercentfortheplanet.org/about-us" target="_blank">1% For The Planet</a> organizations, as well as those ranked within <a href="http://www.corporateknights.com/reports/2017-global-100/" target="_blank">Corporate Knights&#39; 2018 global 100</a> socially responsible firms list.</p>
 `;
 
 copy[2] = `
@@ -259,7 +259,7 @@ copy[46] = `
 `;
 
 copy[47] = `
-<p><strong>Why?</strong> For longer events (full-day events), especially those focused on sensitive topics, or with a lot of physical or mental stimulation, it is important to provide a space where attendees can take a break if they feel it&#39;s necessary for their physical or mental well being.</p>
+<p><strong>Why?</strong> For longer events (e.g., full-day events), especially those focused on sensitive topics, or with a lot of physical or mental stimulation, it is important to provide a space where attendees can take a break if they feel it&#39;s necessary for their physical or mental well being.</p>
 <p><strong>How?</strong> Simply provide a space away from the main event area, possibly near food, beverages and/or the restrooms. Ensure that the location of this space is communicated clearly at the beginning and throughout the event.</p>
 `;
 
@@ -269,7 +269,7 @@ copy[48] = `
 `;
 
 copy[49] = `
-<p><strong>Why?</strong> Providing non-alcoholic options when your event is serving alcohol is incredibly important for providing a safer and more comfortable environment for those who choose not to consume alcohol.</p>
+<p><strong>Why?</strong> Providing non-alcoholic options when your event is serving alcohol is important for providing a safer and more comfortable environment for those who choose not to consume alcohol.</p>
 <p><strong>How?</strong> If alcohol is being served, ensure that a non-alcoholic alternative is offered in similar dishware to the alcoholic beverages in order to ensure that people feel comfortable choosing either. Make sure to communicate the different beverage options to your attendees as well. <a href="https://drive.google.com/file/d/1v7DlDSdo5lXFurDb9k3YyNJWwA5xfi6v/view" target="_blank">This resource</a> on inclusive event planning provides useful tips regarding alcoholic beverages at events.</p>
 `;
 
