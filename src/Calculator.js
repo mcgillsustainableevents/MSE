@@ -12,12 +12,7 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
   <div className="calculator">
     <Logo width={500} />
     <p className="calculator-copy">
-      Below you’ll find the actions that comprise our certification criteria.
-      Each action is worth 1 or 2 points, which are tallied to determine an
-      event’s level of certification. Based on your questionnaire responses, you
-      may find some actions are labeled inapplicable. Click on an action to drop
-      down more information, and identify which actions you either plan to
-      complete, or have completed, by ticking the box next to it!
+      Before you meet with our Sustainable Event Consultant team to get your official certification score, please identify which actions you will complete by ticking the box next to it. This will give you an idea of your unofficial score and will be verified by our team during your meeting. <strong>Click on an action to drop down more information.</strong> Don’t forget to press submit on the next page when you’re done.
     </p>
     <Segment className="calculator-key">
       <div>
