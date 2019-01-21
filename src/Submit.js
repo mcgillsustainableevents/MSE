@@ -54,7 +54,7 @@ const Submit = props => {
         <Divider hidden fitted />
         <Link to="/complete">
           <Button onClick={handleClick} fluid size="large">
-            Send to MSE
+            Submit
           </Button>
         </Link>
         <br />

@@ -12,7 +12,7 @@ const Calculator = ({ pointsNumerator, pointsDenominator }) => (
   <div className="calculator">
     <Logo width={500} />
     <p className="calculator-copy">
-      Before you meet with our Sustainable Event Consultant team to get your official certification score, please identify which actions you will complete by ticking the box next to it. This will give you an idea of your unofficial score and will be verified by our team during your meeting. <strong>Click on an action to drop down more information.</strong> Don’t forget to press submit on the next page when you’re done.
+      Before you meet with our Sustainable Event Consultant team to get your official certification score, please identify which actions you will complete by ticking the box next to it. This will give you an idea of your unofficial score and will be verified by our team during your meeting. <u><strong>Click on an action to drop down more information.</strong></u> Don’t forget to press submit on the next page when you’re done.
     </p>
     <Segment className="calculator-key">
       <div>
