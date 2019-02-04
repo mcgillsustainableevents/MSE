@@ -2,7 +2,7 @@ const copy = {};
 
 copy[1] = `
 <p><strong>Why?</strong> Even the smallest events can produce impacts reaching far beyond their immediate time and place. Whether through their direct operations or investments, firms of all sizes can pose significant risks to ecology and humans alike. It is important to consider partnerships with organizations and sponsors that have positive reputations for consideration and mitigation of the potential environmental, social, and economic impacts of their operations.</p>
-<p><strong>How?</strong> Recognizing the importance of Corporate Social Responsibility, many organizations and firms publish their CSR mandates or strategies online – This can be a great way to find out what your potential partners&#39; approach to sustainability is. We also recommend considering certified <a href="https://www.bcorporation.net/what-are-b-corps" target="_blank">B-Corp</a>, <a href="http://fairtrade.ca" target="_blank">Fair Trade</a>, and <a href="https://www.onepercentfortheplanet.org/about-us" target="_blank">1% For The Planet</a> organizations, as well as those ranked within <a href="http://www.corporateknights.com/reports/2017-global-100/" target="_blank">Corporate Knights&#39; 2018 global 100</a> socially responsible firms list.</p>
+<p><strong>How?</strong> Recognizing the importance of Corporate Social Responsibility, many organizations and firms publish their CSR mandates or strategies online – This can be a great way to find out what your potential partners&#39; approach to sustainability is. We also recommend considering certified <a href="https://www.bcorporation.net/what-are-b-corps" target="_blank">B-Corp</a>, <a href="http://fairtrade.ca" target="_blank">Fair Trade</a>, and <a href="https://www.onepercentfortheplanet.org/about-us" target="_blank">1% For The Planet</a> organizations, as well as those ranked within <a href="http://www.corporateknights.com/reports/2019-global-100/" target="_blank">Corporate Knights&#39; 2019 Global 100</a> socially responsible firms list.</p>
 `;
 
 copy[2] = `
@@ -44,6 +44,7 @@ The three main <a href="https://mcgill.ca/osd/faculty-staff/resources/udl-docume
 <li>Give people several means of engaging with the event: answering quizzes, collaborating in a workshop through cloud servers, allowing people to ask questions during or after the event.</li>
 <li>Allow for multiple means of expression: offer the opportunity to ask questions at a microphone and on online platforms (Twitter feed and <a href="https://www.sli.do/" target="_blank">Slido</a>), allow presenters to attend in person or through video-conferencing platforms.</li>
 </ul></p>
+<p>Click <a href="https://www.uky.edu/udl/powerpoint" target="_blank">here</a>, <a href="http://convention.myacpa.org/houston2018/wp-content/uploads/2017/08/Universal-Design-Principles-for-Presentations-and-Meetings.pdf" target="_blank">here</a>, and <a href="https://www.smashingmagazine.com/2018/11/inclusive-design-accessible-presentations/" target="_blank">here</a> for a few more resources on giving presentations that incorporate Universal Design Principles.</p>
 `;
 
 copy[8] = `
@@ -265,7 +266,7 @@ copy[47] = `
 
 copy[48] = `
 <p><strong>Why?</strong> Single-use water bottles are one of the largest contributors to plastic waste on campus – every year we use more than 100,000 water bottles only to throw them out right afterwards. While recycling them is a step in the right direction, using reusable water bottles completely negates the need for that waste, as well as negates the energy that would have otherwise been used to fill and ship those bottles. This is why McGill has made a huge step by officially banning the sale of single-use water bottles on campus as of May 2019 and taking steps to reduce having single-use water bottles at events.</p>
-<p><strong>How?</strong> There are a number of ways to ensure that your event doesn’t need single-use water bottles. Firstly, and perhaps most simply, asking your attendees to bring their own water bottle is always an option. However, if the scale or style of your event does not allow for this, then other options include having water jugs and compostable cups, or water-refill stations and reusable water bottles available at your event.</p>
+<p><strong>How?</strong> There are a number of ways to ensure that your event doesn’t need single-use water bottles. Firstly, and perhaps most simply, asking your attendees to bring their own water bottle is always an option. However, if the scale or style of your event does not allow for this, then other options include having water jugs and compostable cups, or water-refill stations and reusable water bottles available at your event. For more information, <a href="https://mcgill.ca/sustainability/files/sustainability/water_bottle_free_-_guide_for_event-planners_edited.pdf" target="_blank">this guide</a> is available on how to host events without plastic water bottles.</p>
 `;
 
 copy[49] = `
